@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B21756B1D242870002D5C27 /* VideoDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2175681D242870002D5C27 /* VideoDevice.m */; };
+		5B2922AB1B17573E00DF2C01 /* NabtoVideoLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B2922AA1B17573E00DF2C01 /* NabtoVideoLaunchScreen.xib */; };
+		5B36F3561D23FC990075B5DA /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B36F3511D23FC990075B5DA /* SSKeychain.m */; };
+		5B36F3591D23FC990075B5DA /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B36F3531D23FC990075B5DA /* SSKeychainQuery.m */; };
+		5B390D541AFA06DC009B85F6 /* NabtoVideo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B390D531AFA06DC009B85F6 /* NabtoVideo.xcassets */; };
+		5B4526111C1998470059B3FF /* InfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B45260F1C1998470059B3FF /* InfoTableViewController.m */; };
+		5B7A565A1B0F67410021A4F0 /* VideoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7A56581B0F67410021A4F0 /* VideoPageViewController.m */; };
+		5BB3B72E1C0F1FC800D1836B /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB3B72D1C0F1FC800D1836B /* libiconv.2.dylib */; };
+		5BB3B7301C0F200600D1836B /* libbz2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB3B72F1C0F200600D1836B /* libbz2.1.0.dylib */; };
+		5BEF2BC41AFA01F200975E75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D4C55193CE77A00EA8579 /* AppDelegate.m */; };
+		5BEF2BC51AFA01F200975E75 /* KxMovieDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A22F3193F10630073F5F5 /* KxMovieDecoder.m */; };
+		5BEF2BC61AFA01F200975E75 /* NabtoURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D4CA0193D108100EA8579 /* NabtoURLProtocol.m */; };
+		5BEF2BC71AFA01F200975E75 /* KxMovieGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A22F5193F10630073F5F5 /* KxMovieGLView.m */; };
+		5BEF2BC81AFA01F200975E75 /* AddVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B929D06193E503A00A5ED21 /* AddVideoViewController.m */; };
+		5BEF2BC91AFA01F200975E75 /* KxMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A22F7193F10630073F5F5 /* KxMovieViewController.m */; };
+		5BEF2BCA1AFA01F200975E75 /* ActivityViewWithLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F789D1A0D136400D68605 /* ActivityViewWithLabel.m */; };
+		5BEF2BCB1AFA01F200975E75 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD9C3919F039340035BE5F /* AboutViewController.m */; };
+		5BEF2BCC1AFA01F200975E75 /* KxAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A22EE193F10630073F5F5 /* KxAudioManager.m */; };
+		5BEF2BCD1AFA01F200975E75 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE9A7C019EFEAB700414C98 /* QRViewController.m */; };
+		5BEF2BCE1AFA01F200975E75 /* WebVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A2324193F4DDB0073F5F5 /* WebVideoViewController.m */; };
+		5BEF2BCF1AFA01F200975E75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D4C51193CE77A00EA8579 /* main.m */; };
+		5BEF2BD01AFA01F200975E75 /* VideoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4A185193DFDD100AC9127 /* VideoTableViewController.m */; };
+		5BEF2BD21AFA01F200975E75 /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B929D02193E478700A5ED21 /* Storage.m */; };
+		5BEF2BD31AFA01F200975E75 /* DebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7CEE719EE92E800880E48 /* DebugViewController.m */; };
+		5BEF2BD41AFA01F200975E75 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0FA1B11A3F32F4009FCD1D /* Reachability.m */; };
+		5BEF2BD91AFA01F200975E75 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE9A7C219EFEEC400414C98 /* ImageIO.framework */; };
+		5BEF2BDA1AFA01F200975E75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2319193F13920073F5F5 /* QuartzCore.framework */; };
+		5BEF2BDB1AFA01F200975E75 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2317193F13450073F5F5 /* MediaPlayer.framework */; };
+		5BEF2BDC1AFA01F200975E75 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2315193F133B0073F5F5 /* CoreAudio.framework */; };
+		5BEF2BDD1AFA01F200975E75 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE9A7C419EFEED400414C98 /* CoreVideo.framework */; };
+		5BEF2BDE1AFA01F200975E75 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE9A7C619EFEEE500414C98 /* CoreMedia.framework */; };
+		5BEF2BDF1AFA01F200975E75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8D4C47193CE77A00EA8579 /* CoreGraphics.framework */; };
+		5BEF2BE11AFA01F200975E75 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2313193F13340073F5F5 /* AudioToolbox.framework */; };
+		5BEF2BE21AFA01F200975E75 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2311193F13290073F5F5 /* Accelerate.framework */; };
+		5BEF2BE31AFA01F200975E75 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A230F193F13210073F5F5 /* OpenGLES.framework */; };
+		5BEF2BE41AFA01F200975E75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A230D193F12F80073F5F5 /* AVFoundation.framework */; };
+		5BEF2BE51AFA01F200975E75 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A22FD193F11640073F5F5 /* libavcodec.a */; };
+		5BEF2BE61AFA01F200975E75 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A22FE193F11640073F5F5 /* libavdevice.a */; };
+		5BEF2BE71AFA01F200975E75 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A22FF193F11640073F5F5 /* libavfilter.a */; };
+		5BEF2BE81AFA01F200975E75 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2300193F11640073F5F5 /* libavformat.a */; };
+		5BEF2BE91AFA01F200975E75 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2301193F11640073F5F5 /* libavutil.a */; };
+		5BEF2BEA1AFA01F200975E75 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2302193F11640073F5F5 /* libswresample.a */; };
+		5BEF2BEB1AFA01F200975E75 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2303193F11640073F5F5 /* libswscale.a */; };
+		5BEF2BEE1AFA01F200975E75 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB1E58C1AC044C600747504 /* SystemConfiguration.framework */; };
+		5BEF2BEF1AFA01F200975E75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8D4C49193CE77A00EA8579 /* UIKit.framework */; };
+		5BEF2BF01AFA01F200975E75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8D4C45193CE77A00EA8579 /* Foundation.framework */; };
+		5BEF2BF21AFA01F200975E75 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB2C0BC1A08E382009E5984 /* Common.xcassets */; };
+		5BEF2BF41AFA01F200975E75 /* NabtoVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4A182193DFAF200AC9127 /* NabtoVideo.storyboard */; };
+		5BEF2BF51AFA01F200975E75 /* kxmovie.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A22F1193F10630073F5F5 /* kxmovie.bundle */; };
+		5BEF2BF91AFA01F200975E75 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A230B193F11880073F5F5 /* include */; };
+		5BFF0CAB1B09F0590026E180 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFF0CA91B09F0590026E180 /* FrontViewController.m */; };
+		D4B9D16B1F42CA0700F43704 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B9D16A1F42CA0700F43704 /* libz.tbd */; };
+		D4C159FA1FAC389500CD2C34 /* NabtoClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C159F91FAC389500CD2C34 /* NabtoClient.framework */; };
+		D4C159FE1FAC3CED00CD2C34 /* NabtoClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C159F91FAC389500CD2C34 /* NabtoClient.framework */; };
+		D4C159FF1FAC3CED00CD2C34 /* NabtoClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4C159F91FAC389500CD2C34 /* NabtoClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4C159F31FAC362600CD2C34 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D4C159FF1FAC3CED00CD2C34 /* NabtoClient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B0FA1B01A3F32F4009FCD1D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5B0FA1B11A3F32F4009FCD1D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5B2175671D242863002D5C27 /* VideoDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoDevice.h; path = Nabto/VideoDevice.h; sourceTree = "<group>"; };
+		5B2175681D242870002D5C27 /* VideoDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoDevice.m; path = Nabto/VideoDevice.m; sourceTree = "<group>"; };
+		5B2922AA1B17573E00DF2C01 /* NabtoVideoLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NabtoVideoLaunchScreen.xib; path = Nabto/NabtoVideoLaunchScreen.xib; sourceTree = "<group>"; };
+		5B36F3501D23FC990075B5DA /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		5B36F3511D23FC990075B5DA /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		5B36F3521D23FC990075B5DA /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
+		5B36F3531D23FC990075B5DA /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
+		5B390D531AFA06DC009B85F6 /* NabtoVideo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NabtoVideo.xcassets; sourceTree = "<group>"; };
+		5B3A22ED193F10630073F5F5 /* KxAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxAudioManager.h; path = Nabto/kxmovie/KxAudioManager.h; sourceTree = "<group>"; };
+		5B3A22EE193F10630073F5F5 /* KxAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxAudioManager.m; path = Nabto/kxmovie/KxAudioManager.m; sourceTree = "<group>"; };
+		5B3A22EF193F10630073F5F5 /* KxLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxLogger.h; path = Nabto/kxmovie/KxLogger.h; sourceTree = "<group>"; };
+		5B3A22F0193F10630073F5F5 /* kxmovie-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "kxmovie-Prefix.pch"; path = "Nabto/kxmovie/kxmovie-Prefix.pch"; sourceTree = "<group>"; };
+		5B3A22F1193F10630073F5F5 /* kxmovie.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = kxmovie.bundle; path = Nabto/kxmovie/kxmovie.bundle; sourceTree = "<group>"; };
+		5B3A22F2193F10630073F5F5 /* KxMovieDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxMovieDecoder.h; path = Nabto/kxmovie/KxMovieDecoder.h; sourceTree = "<group>"; };
+		5B3A22F3193F10630073F5F5 /* KxMovieDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxMovieDecoder.m; path = Nabto/kxmovie/KxMovieDecoder.m; sourceTree = "<group>"; };
+		5B3A22F4193F10630073F5F5 /* KxMovieGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxMovieGLView.h; path = Nabto/kxmovie/KxMovieGLView.h; sourceTree = "<group>"; };
+		5B3A22F5193F10630073F5F5 /* KxMovieGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxMovieGLView.m; path = Nabto/kxmovie/KxMovieGLView.m; sourceTree = "<group>"; };
+		5B3A22F6193F10630073F5F5 /* KxMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxMovieViewController.h; path = Nabto/kxmovie/KxMovieViewController.h; sourceTree = "<group>"; };
+		5B3A22F7193F10630073F5F5 /* KxMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxMovieViewController.m; path = Nabto/kxmovie/KxMovieViewController.m; sourceTree = "<group>"; };
+		5B3A22FD193F11640073F5F5 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = Libs/FFmpeg/libavcodec.a; sourceTree = "<group>"; };
+		5B3A22FE193F11640073F5F5 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = Libs/FFmpeg/libavdevice.a; sourceTree = "<group>"; };
+		5B3A22FF193F11640073F5F5 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = Libs/FFmpeg/libavfilter.a; sourceTree = "<group>"; };
+		5B3A2300193F11640073F5F5 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = Libs/FFmpeg/libavformat.a; sourceTree = "<group>"; };
+		5B3A2301193F11640073F5F5 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = Libs/FFmpeg/libavutil.a; sourceTree = "<group>"; };
+		5B3A2302193F11640073F5F5 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = Libs/FFmpeg/libswresample.a; sourceTree = "<group>"; };
+		5B3A2303193F11640073F5F5 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = Libs/FFmpeg/libswscale.a; sourceTree = "<group>"; };
+		5B3A230B193F11880073F5F5 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = Libs/FFmpeg/include; sourceTree = "<group>"; };
+		5B3A230D193F12F80073F5F5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5B3A230F193F13210073F5F5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5B3A2311193F13290073F5F5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		5B3A2313193F13340073F5F5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5B3A2315193F133B0073F5F5 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		5B3A2317193F13450073F5F5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		5B3A2319193F13920073F5F5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5B3A2323193F4DDB0073F5F5 /* WebVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebVideoViewController.h; path = Nabto/WebVideoViewController.h; sourceTree = "<group>"; };
+		5B3A2324193F4DDB0073F5F5 /* WebVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebVideoViewController.m; path = Nabto/WebVideoViewController.m; sourceTree = "<group>"; };
+		5B45260E1C1998470059B3FF /* InfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoTableViewController.h; path = Nabto/InfoTableViewController.h; sourceTree = "<group>"; };
+		5B45260F1C1998470059B3FF /* InfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoTableViewController.m; path = Nabto/InfoTableViewController.m; sourceTree = "<group>"; };
+		5B7A56571B0F67410021A4F0 /* VideoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoPageViewController.h; path = Nabto/VideoPageViewController.h; sourceTree = "<group>"; };
+		5B7A56581B0F67410021A4F0 /* VideoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoPageViewController.m; path = Nabto/VideoPageViewController.m; sourceTree = "<group>"; };
+		5B8D4C45193CE77A00EA8579 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5B8D4C47193CE77A00EA8579 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5B8D4C49193CE77A00EA8579 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5B8D4C4F193CE77A00EA8579 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B8D4C51193CE77A00EA8579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B8D4C53193CE77A00EA8579 /* Nabto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nabto-Prefix.pch"; sourceTree = "<group>"; };
+		5B8D4C54193CE77A00EA8579 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5B8D4C55193CE77A00EA8579 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5B8D4C67193CE77A00EA8579 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5B8D4C87193CE97600EA8579 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		5B8D4C88193CE97600EA8579 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		5B8D4C9F193D108100EA8579 /* NabtoURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NabtoURLProtocol.h; sourceTree = "<group>"; };
+		5B8D4CA0193D108100EA8579 /* NabtoURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NabtoURLProtocol.m; sourceTree = "<group>"; };
+		5B8D4CA5193D3F5700EA8579 /* NabtoMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NabtoMain.storyboard; sourceTree = "<group>"; };
+		5B8F789C1A0D136400D68605 /* ActivityViewWithLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityViewWithLabel.h; path = Nabto/ActivityViewWithLabel.h; sourceTree = "<group>"; };
+		5B8F789D1A0D136400D68605 /* ActivityViewWithLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityViewWithLabel.m; path = Nabto/ActivityViewWithLabel.m; sourceTree = "<group>"; };
+		5B929D01193E478700A5ED21 /* Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Storage.h; path = Nabto/Storage.h; sourceTree = "<group>"; };
+		5B929D02193E478700A5ED21 /* Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Storage.m; path = Nabto/Storage.m; sourceTree = "<group>"; };
+		5B929D05193E503A00A5ED21 /* AddVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddVideoViewController.h; path = Nabto/AddVideoViewController.h; sourceTree = "<group>"; };
+		5B929D06193E503A00A5ED21 /* AddVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddVideoViewController.m; path = Nabto/AddVideoViewController.m; sourceTree = "<group>"; };
+		5BB1E58C1AC044C600747504 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5BB2C0BC1A08E382009E5984 /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
+		5BB3B72D1C0F1FC800D1836B /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
+		5BB3B72F1C0F200600D1836B /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = ../../../../../../../../usr/lib/libbz2.1.0.dylib; sourceTree = "<group>"; };
+		5BE7CEE619EE92E800880E48 /* DebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DebugViewController.h; path = Nabto/DebugViewController.h; sourceTree = "<group>"; };
+		5BE7CEE719EE92E800880E48 /* DebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DebugViewController.m; path = Nabto/DebugViewController.m; sourceTree = "<group>"; };
+		5BE9A7BF19EFEAB700414C98 /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRViewController.h; path = Nabto/QRViewController.h; sourceTree = "<group>"; };
+		5BE9A7C019EFEAB700414C98 /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRViewController.m; path = Nabto/QRViewController.m; sourceTree = "<group>"; };
+		5BE9A7C219EFEEC400414C98 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		5BE9A7C419EFEED400414C98 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		5BE9A7C619EFEEE500414C98 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		5BEF2C011AFA01F200975E75 /* Nabto Video.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nabto Video.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BEF2C031AFA027E00975E75 /* NabtoVideo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NabtoVideo.plist; sourceTree = "<group>"; };
+		5BF4A182193DFAF200AC9127 /* NabtoVideo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NabtoVideo.storyboard; path = Nabto/NabtoVideo.storyboard; sourceTree = "<group>"; };
+		5BF4A184193DFDD100AC9127 /* VideoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoTableViewController.h; path = Nabto/VideoTableViewController.h; sourceTree = "<group>"; };
+		5BF4A185193DFDD100AC9127 /* VideoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoTableViewController.m; path = Nabto/VideoTableViewController.m; sourceTree = "<group>"; };
+		5BFD9C3819F039340035BE5F /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = Nabto/AboutViewController.h; sourceTree = "<group>"; };
+		5BFD9C3919F039340035BE5F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = Nabto/AboutViewController.m; sourceTree = "<group>"; };
+		5BFF0CA81B09F0590026E180 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrontViewController.h; path = Nabto/FrontViewController.h; sourceTree = "<group>"; };
+		5BFF0CA91B09F0590026E180 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrontViewController.m; path = Nabto/FrontViewController.m; sourceTree = "<group>"; };
+		D4B9D16A1F42CA0700F43704 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D4C159F91FAC389500CD2C34 /* NabtoClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NabtoClient.framework; path = "../../../../../artifacts/ios/ios-framework/NabtoClient.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BEF2BD51AFA01F200975E75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C159FA1FAC389500CD2C34 /* NabtoClient.framework in Frameworks */,
+				D4B9D16B1F42CA0700F43704 /* libz.tbd in Frameworks */,
+				5BB3B7301C0F200600D1836B /* libbz2.1.0.dylib in Frameworks */,
+				5BB3B72E1C0F1FC800D1836B /* libiconv.2.dylib in Frameworks */,
+				5BEF2BD91AFA01F200975E75 /* ImageIO.framework in Frameworks */,
+				5BEF2BDA1AFA01F200975E75 /* QuartzCore.framework in Frameworks */,
+				5BEF2BDB1AFA01F200975E75 /* MediaPlayer.framework in Frameworks */,
+				5BEF2BDC1AFA01F200975E75 /* CoreAudio.framework in Frameworks */,
+				5BEF2BDD1AFA01F200975E75 /* CoreVideo.framework in Frameworks */,
+				5BEF2BDE1AFA01F200975E75 /* CoreMedia.framework in Frameworks */,
+				5BEF2BDF1AFA01F200975E75 /* CoreGraphics.framework in Frameworks */,
+				5BEF2BE11AFA01F200975E75 /* AudioToolbox.framework in Frameworks */,
+				5BEF2BE21AFA01F200975E75 /* Accelerate.framework in Frameworks */,
+				5BEF2BE31AFA01F200975E75 /* OpenGLES.framework in Frameworks */,
+				5BEF2BE41AFA01F200975E75 /* AVFoundation.framework in Frameworks */,
+				5BEF2BE51AFA01F200975E75 /* libavcodec.a in Frameworks */,
+				5BEF2BE61AFA01F200975E75 /* libavdevice.a in Frameworks */,
+				5BEF2BE71AFA01F200975E75 /* libavfilter.a in Frameworks */,
+				5BEF2BE81AFA01F200975E75 /* libavformat.a in Frameworks */,
+				5BEF2BE91AFA01F200975E75 /* libavutil.a in Frameworks */,
+				5BEF2BEA1AFA01F200975E75 /* libswresample.a in Frameworks */,
+				5BEF2BEB1AFA01F200975E75 /* libswscale.a in Frameworks */,
+				5BEF2BEE1AFA01F200975E75 /* SystemConfiguration.framework in Frameworks */,
+				5BEF2BEF1AFA01F200975E75 /* UIKit.framework in Frameworks */,
+				D4C159FE1FAC3CED00CD2C34 /* NabtoClient.framework in Frameworks */,
+				5BEF2BF01AFA01F200975E75 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B36F34F1D23FC8D0075B5DA /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				5B36F3501D23FC990075B5DA /* SSKeychain.h */,
+				5B36F3511D23FC990075B5DA /* SSKeychain.m */,
+				5B36F3521D23FC990075B5DA /* SSKeychainQuery.h */,
+				5B36F3531D23FC990075B5DA /* SSKeychainQuery.m */,
+			);
+			name = SSKeychain;
+			sourceTree = "<group>";
+		};
+		5B3A22EC193F10500073F5F5 /* kxmovie */ = {
+			isa = PBXGroup;
+			children = (
+				5B3A230B193F11880073F5F5 /* include */,
+				5B3A22ED193F10630073F5F5 /* KxAudioManager.h */,
+				5B3A22EE193F10630073F5F5 /* KxAudioManager.m */,
+				5B3A22EF193F10630073F5F5 /* KxLogger.h */,
+				5B3A22F0193F10630073F5F5 /* kxmovie-Prefix.pch */,
+				5B3A22F1193F10630073F5F5 /* kxmovie.bundle */,
+				5B3A22F2193F10630073F5F5 /* KxMovieDecoder.h */,
+				5B3A22F3193F10630073F5F5 /* KxMovieDecoder.m */,
+				5B3A22F4193F10630073F5F5 /* KxMovieGLView.h */,
+				5B3A22F5193F10630073F5F5 /* KxMovieGLView.m */,
+				5B3A22F6193F10630073F5F5 /* KxMovieViewController.h */,
+				5B3A22F7193F10630073F5F5 /* KxMovieViewController.m */,
+			);
+			name = kxmovie;
+			sourceTree = "<group>";
+		};
+		5B8D4C39193CE77A00EA8579 = {
+			isa = PBXGroup;
+			children = (
+				5B8D4C4B193CE77A00EA8579 /* Nabto */,
+				5BCCEC82193E06250010CF91 /* NabtoVideo */,
+				5B8D4C7D193CE7B300EA8579 /* Util */,
+				5B8D4C7E193CE7D200EA8579 /* Ressources */,
+				5B8D4C4C193CE77A00EA8579 /* Supporting Files */,
+				5B8D4C44193CE77A00EA8579 /* Frameworks */,
+				5B8D4C43193CE77A00EA8579 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B8D4C43193CE77A00EA8579 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BEF2C011AFA01F200975E75 /* Nabto Video.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B8D4C44193CE77A00EA8579 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4C159F91FAC389500CD2C34 /* NabtoClient.framework */,
+				D4B9D16A1F42CA0700F43704 /* libz.tbd */,
+				5BB3B72F1C0F200600D1836B /* libbz2.1.0.dylib */,
+				5BB3B72D1C0F1FC800D1836B /* libiconv.2.dylib */,
+				5BB1E58C1AC044C600747504 /* SystemConfiguration.framework */,
+				5BE9A7C619EFEEE500414C98 /* CoreMedia.framework */,
+				5BE9A7C419EFEED400414C98 /* CoreVideo.framework */,
+				5BE9A7C219EFEEC400414C98 /* ImageIO.framework */,
+				5B3A2319193F13920073F5F5 /* QuartzCore.framework */,
+				5B3A2317193F13450073F5F5 /* MediaPlayer.framework */,
+				5B3A2315193F133B0073F5F5 /* CoreAudio.framework */,
+				5B3A2313193F13340073F5F5 /* AudioToolbox.framework */,
+				5B3A2311193F13290073F5F5 /* Accelerate.framework */,
+				5B3A230F193F13210073F5F5 /* OpenGLES.framework */,
+				5B3A230D193F12F80073F5F5 /* AVFoundation.framework */,
+				5B3A22FD193F11640073F5F5 /* libavcodec.a */,
+				5B3A22FE193F11640073F5F5 /* libavdevice.a */,
+				5B3A22FF193F11640073F5F5 /* libavfilter.a */,
+				5B3A2300193F11640073F5F5 /* libavformat.a */,
+				5B3A2301193F11640073F5F5 /* libavutil.a */,
+				5B3A2302193F11640073F5F5 /* libswresample.a */,
+				5B3A2303193F11640073F5F5 /* libswscale.a */,
+				5B8D4C45193CE77A00EA8579 /* Foundation.framework */,
+				5B8D4C47193CE77A00EA8579 /* CoreGraphics.framework */,
+				5B8D4C49193CE77A00EA8579 /* UIKit.framework */,
+				5B8D4C67193CE77A00EA8579 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B8D4C4B193CE77A00EA8579 /* Nabto */ = {
+			isa = PBXGroup;
+			children = (
+				5B8D4CA5193D3F5700EA8579 /* NabtoMain.storyboard */,
+				5B8D4C87193CE97600EA8579 /* WebViewController.h */,
+				5B8D4C88193CE97600EA8579 /* WebViewController.m */,
+			);
+			path = Nabto;
+			sourceTree = "<group>";
+		};
+		5B8D4C4C193CE77A00EA8579 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B8D4C54193CE77A00EA8579 /* AppDelegate.h */,
+				5B8D4C55193CE77A00EA8579 /* AppDelegate.m */,
+				5B8D4C4E193CE77A00EA8579 /* InfoPlist.strings */,
+				5B8D4C51193CE77A00EA8579 /* main.m */,
+				5B8D4C53193CE77A00EA8579 /* Nabto-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = Nabto;
+			sourceTree = "<group>";
+		};
+		5B8D4C7D193CE7B300EA8579 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5B36F34F1D23FC8D0075B5DA /* SSKeychain */,
+				5B0FA1B01A3F32F4009FCD1D /* Reachability.h */,
+				5B0FA1B11A3F32F4009FCD1D /* Reachability.m */,
+				5B8D4C9F193D108100EA8579 /* NabtoURLProtocol.h */,
+				5B8D4CA0193D108100EA8579 /* NabtoURLProtocol.m */,
+			);
+			name = Util;
+			path = Nabto;
+			sourceTree = "<group>";
+		};
+		5B8D4C7E193CE7D200EA8579 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				5BB2C0BC1A08E382009E5984 /* Common.xcassets */,
+				5B390D531AFA06DC009B85F6 /* NabtoVideo.xcassets */,
+				5BEF2C031AFA027E00975E75 /* NabtoVideo.plist */,
+				5B8D4C94193D0C8900EA8579 /* nabto */,
+			);
+			name = Ressources;
+			path = Nabto;
+			sourceTree = "<group>";
+		};
+		5B8D4C94193D0C8900EA8579 /* nabto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = nabto;
+			sourceTree = "<group>";
+		};
+		5BCCEC82193E06250010CF91 /* NabtoVideo */ = {
+			isa = PBXGroup;
+			children = (
+				5B3A22EC193F10500073F5F5 /* kxmovie */,
+				5BF4A182193DFAF200AC9127 /* NabtoVideo.storyboard */,
+				5BF4A184193DFDD100AC9127 /* VideoTableViewController.h */,
+				5BF4A185193DFDD100AC9127 /* VideoTableViewController.m */,
+				5B7A56571B0F67410021A4F0 /* VideoPageViewController.h */,
+				5B7A56581B0F67410021A4F0 /* VideoPageViewController.m */,
+				5BFF0CA81B09F0590026E180 /* FrontViewController.h */,
+				5BFF0CA91B09F0590026E180 /* FrontViewController.m */,
+				5B45260E1C1998470059B3FF /* InfoTableViewController.h */,
+				5B45260F1C1998470059B3FF /* InfoTableViewController.m */,
+				5B929D05193E503A00A5ED21 /* AddVideoViewController.h */,
+				5B929D06193E503A00A5ED21 /* AddVideoViewController.m */,
+				5B3A2323193F4DDB0073F5F5 /* WebVideoViewController.h */,
+				5B3A2324193F4DDB0073F5F5 /* WebVideoViewController.m */,
+				5B929D01193E478700A5ED21 /* Storage.h */,
+				5B929D02193E478700A5ED21 /* Storage.m */,
+				5B2175671D242863002D5C27 /* VideoDevice.h */,
+				5B2175681D242870002D5C27 /* VideoDevice.m */,
+				5BE7CEE619EE92E800880E48 /* DebugViewController.h */,
+				5BE7CEE719EE92E800880E48 /* DebugViewController.m */,
+				5BE9A7BF19EFEAB700414C98 /* QRViewController.h */,
+				5BE9A7C019EFEAB700414C98 /* QRViewController.m */,
+				5BFD9C3819F039340035BE5F /* AboutViewController.h */,
+				5BFD9C3919F039340035BE5F /* AboutViewController.m */,
+				5B8F789C1A0D136400D68605 /* ActivityViewWithLabel.h */,
+				5B8F789D1A0D136400D68605 /* ActivityViewWithLabel.m */,
+				5B2922AA1B17573E00DF2C01 /* NabtoVideoLaunchScreen.xib */,
+			);
+			name = NabtoVideo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BEF2BC21AFA01F200975E75 /* Nabto Video */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BEF2BFE1AFA01F200975E75 /* Build configuration list for PBXNativeTarget "Nabto Video" */;
+			buildPhases = (
+				5BEF2BC31AFA01F200975E75 /* Sources */,
+				5BEF2BD51AFA01F200975E75 /* Frameworks */,
+				5BEF2BF11AFA01F200975E75 /* Resources */,
+				D4C159F31FAC362600CD2C34 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nabto Video";
+			productName = Nabto;
+			productReference = 5BEF2C011AFA01F200975E75 /* Nabto Video.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B8D4C3A193CE77A00EA8579 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MRodalgaard;
+				TargetAttributes = {
+					5BEF2BC21AFA01F200975E75 = {
+						DevelopmentTeam = E55K8RCV2E;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 5B8D4C3D193CE77A00EA8579 /* Build configuration list for PBXProject "Nabto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B8D4C39193CE77A00EA8579;
+			productRefGroup = 5B8D4C43193CE77A00EA8579 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BEF2BC21AFA01F200975E75 /* Nabto Video */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BEF2BF11AFA01F200975E75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2922AB1B17573E00DF2C01 /* NabtoVideoLaunchScreen.xib in Resources */,
+				5BEF2BF21AFA01F200975E75 /* Common.xcassets in Resources */,
+				5BEF2BF41AFA01F200975E75 /* NabtoVideo.storyboard in Resources */,
+				5B390D541AFA06DC009B85F6 /* NabtoVideo.xcassets in Resources */,
+				5BEF2BF51AFA01F200975E75 /* kxmovie.bundle in Resources */,
+				5BEF2BF91AFA01F200975E75 /* include in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BEF2BC31AFA01F200975E75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BEF2BC41AFA01F200975E75 /* AppDelegate.m in Sources */,
+				5BEF2BC51AFA01F200975E75 /* KxMovieDecoder.m in Sources */,
+				5B21756B1D242870002D5C27 /* VideoDevice.m in Sources */,
+				5B36F3561D23FC990075B5DA /* SSKeychain.m in Sources */,
+				5BEF2BC61AFA01F200975E75 /* NabtoURLProtocol.m in Sources */,
+				5BEF2BC71AFA01F200975E75 /* KxMovieGLView.m in Sources */,
+				5BEF2BC81AFA01F200975E75 /* AddVideoViewController.m in Sources */,
+				5BEF2BC91AFA01F200975E75 /* KxMovieViewController.m in Sources */,
+				5BEF2BCA1AFA01F200975E75 /* ActivityViewWithLabel.m in Sources */,
+				5BEF2BCB1AFA01F200975E75 /* AboutViewController.m in Sources */,
+				5BEF2BCC1AFA01F200975E75 /* KxAudioManager.m in Sources */,
+				5BEF2BCD1AFA01F200975E75 /* QRViewController.m in Sources */,
+				5BEF2BCE1AFA01F200975E75 /* WebVideoViewController.m in Sources */,
+				5B36F3591D23FC990075B5DA /* SSKeychainQuery.m in Sources */,
+				5BEF2BCF1AFA01F200975E75 /* main.m in Sources */,
+				5BFF0CAB1B09F0590026E180 /* FrontViewController.m in Sources */,
+				5BEF2BD01AFA01F200975E75 /* VideoTableViewController.m in Sources */,
+				5B4526111C1998470059B3FF /* InfoTableViewController.m in Sources */,
+				5BEF2BD21AFA01F200975E75 /* Storage.m in Sources */,
+				5BEF2BD31AFA01F200975E75 /* DebugViewController.m in Sources */,
+				5BEF2BD41AFA01F200975E75 /* Reachability.m in Sources */,
+				5B7A565A1B0F67410021A4F0 /* VideoPageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B8D4C4E193CE77A00EA8579 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B8D4C4F193CE77A00EA8579 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B8D4C75193CE77A00EA8579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../../artifacts/ios/ios-framework/NabtoClient.framework/**",
+					"$(SRCROOT)/../../../../../artifacts/ios/ios-framework/**",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../../../artifacts/ios/ios-framework/NabtoClient.framework/Headers";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_NO_PIE = YES;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../../../artifacts/nabto/ios/lib\"";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B8D4C76193CE77A00EA8579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../../artifacts/ios/ios-framework/NabtoClient.framework/**",
+					"$(SRCROOT)/../../../../../artifacts/ios/ios-framework/**",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../../../artifacts/ios/ios-framework/NabtoClient.framework/Headers";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_NO_PIE = YES;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../../../artifacts/nabto/ios/lib\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5BEF2BFF1AFA01F200975E75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = NabtoVideoAppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = E55K8RCV2E;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../../artifacts/ios/ios-framework",
+					"$(SRCROOT)/../../../../../artifacts/ios/ios-framework/NabtoClient.framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nabto/Nabto-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Libs/FFmpeg/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Nabto/NabtoVideo.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_NO_PIE = NO;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs/**",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nabto.iosapp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Nabto Video";
+				PROVISIONING_PROFILE = "9527fcb9-8fd6-432e-988e-72d906f3b4c9";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.nabto.iosapp.Nabto-Video";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5BEF2C001AFA01F200975E75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = NabtoVideoAppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = E55K8RCV2E;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../../artifacts/ios/ios-framework",
+					"$(SRCROOT)/../../../../../artifacts/ios/ios-framework/NabtoClient.framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nabto/Nabto-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Libs/FFmpeg/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Nabto/NabtoVideo.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_NO_PIE = NO;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs/**",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nabto.iosapp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Nabto Video";
+				PROVISIONING_PROFILE = "9527fcb9-8fd6-432e-988e-72d906f3b4c9";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.nabto.iosapp.Nabto-Video";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B8D4C3D193CE77A00EA8579 /* Build configuration list for PBXProject "Nabto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B8D4C75193CE77A00EA8579 /* Debug */,
+				5B8D4C76193CE77A00EA8579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BEF2BFE1AFA01F200975E75 /* Build configuration list for PBXNativeTarget "Nabto Video" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BEF2BFF1AFA01F200975E75 /* Debug */,
+				5BEF2C001AFA01F200975E75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B8D4C3A193CE77A00EA8579 /* Project object */;
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="tsJ-QY-bnH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="X3c-DU-OwV">
+            <objects>
+                <viewController id="sXf-Pk-aWM" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9eF-19-B9g"/>
+                        <viewControllerLayoutGuide type="bottom" id="K7N-BI-lXg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JF4-Le-eCN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WJg-Zj-ya2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="sXf-Pk-aWM" id="Nti-tK-rKR"/>
+                                </connections>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pL1-Kh-7Go">
+                                <rect key="frame" x="0.0" y="-24" width="375" height="44"/>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WJg-Zj-ya2" secondAttribute="bottom" id="TyS-e2-P2f"/>
+                            <constraint firstItem="pL1-Kh-7Go" firstAttribute="top" secondItem="JF4-Le-eCN" secondAttribute="top" constant="-24" id="aY2-6w-gBr"/>
+                            <constraint firstItem="WJg-Zj-ya2" firstAttribute="top" secondItem="JF4-Le-eCN" secondAttribute="top" id="cSq-6n-K8n"/>
+                            <constraint firstItem="WJg-Zj-ya2" firstAttribute="leading" secondItem="JF4-Le-eCN" secondAttribute="leading" id="pxO-4C-lE8"/>
+                            <constraint firstAttribute="trailing" secondItem="pL1-Kh-7Go" secondAttribute="trailing" id="tEN-PD-bsw"/>
+                            <constraint firstAttribute="trailing" secondItem="WJg-Zj-ya2" secondAttribute="trailing" id="xqd-aG-cNW"/>
+                            <constraint firstItem="pL1-Kh-7Go" firstAttribute="leading" secondItem="JF4-Le-eCN" secondAttribute="leading" id="yPy-Hi-QsO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zck-XT-7oj">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" id="GkT-pW-s3g">
+                            <rect key="frame" x="57.5" y="7" width="260" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="go"/>
+                            <connections>
+                                <outlet property="delegate" destination="sXf-Pk-aWM" id="z0n-Zi-pbH"/>
+                            </connections>
+                        </textField>
+                        <barButtonItem key="rightBarButtonItem" image="Burger" id="Uxw-fq-93i">
+                            <connections>
+                                <action selector="moreButtonPressed:" destination="sXf-Pk-aWM" id="UrC-nF-Lhh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="moreButton" destination="Uxw-fq-93i" id="2vn-3S-FQa"/>
+                        <outlet property="urlTextField" destination="GkT-pW-s3g" id="BGm-Oe-AgW"/>
+                        <outlet property="webView" destination="WJg-Zj-ya2" id="6Ig-2N-qVL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GvE-6P-Psy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948.8" y="99.850074962518747"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yv8-fT-hRm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tsJ-QY-bnH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="60r-TN-Opr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sXf-Pk-aWM" kind="relationship" relationship="rootViewController" id="r3g-0N-S0N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7T-vQ-lvx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1107.2" y="99.850074962518747"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Burger" width="19" height="19"/>
+    </resources>
+</document>
