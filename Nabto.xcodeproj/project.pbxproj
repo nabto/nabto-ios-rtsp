@@ -50,7 +50,6 @@
 		5BEF2BF41AFA01F200975E75 /* NabtoVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4A182193DFAF200AC9127 /* NabtoVideo.storyboard */; };
 		5BFF0CAB1B09F0590026E180 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFF0CA91B09F0590026E180 /* FrontViewController.m */; };
 		D4B9D16B1F42CA0700F43704 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B9D16A1F42CA0700F43704 /* libz.tbd */; };
-		D4C159FF1FAC3CED00CD2C34 /* NabtoClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4C159F91FAC389500CD2C34 /* NabtoClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,7 +59,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D4C159FF1FAC3CED00CD2C34 /* NabtoClient.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,13 +87,6 @@
 		5B3A22F5193F10630073F5F5 /* KxMovieGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxMovieGLView.m; path = Nabto/kxmovie/KxMovieGLView.m; sourceTree = "<group>"; };
 		5B3A22F6193F10630073F5F5 /* KxMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxMovieViewController.h; path = Nabto/kxmovie/KxMovieViewController.h; sourceTree = "<group>"; };
 		5B3A22F7193F10630073F5F5 /* KxMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxMovieViewController.m; path = Nabto/kxmovie/KxMovieViewController.m; sourceTree = "<group>"; };
-		5B3A22FD193F11640073F5F5 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = Libs/FFmpeg/libavcodec.a; sourceTree = "<group>"; };
-		5B3A22FE193F11640073F5F5 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = Libs/FFmpeg/libavdevice.a; sourceTree = "<group>"; };
-		5B3A22FF193F11640073F5F5 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = Libs/FFmpeg/libavfilter.a; sourceTree = "<group>"; };
-		5B3A2300193F11640073F5F5 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = Libs/FFmpeg/libavformat.a; sourceTree = "<group>"; };
-		5B3A2301193F11640073F5F5 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = Libs/FFmpeg/libavutil.a; sourceTree = "<group>"; };
-		5B3A2302193F11640073F5F5 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = Libs/FFmpeg/libswresample.a; sourceTree = "<group>"; };
-		5B3A2303193F11640073F5F5 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = Libs/FFmpeg/libswscale.a; sourceTree = "<group>"; };
 		5B3A230B193F11880073F5F5 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = Libs/FFmpeg/include; sourceTree = "<group>"; };
 		5B3A230D193F12F80073F5F5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		5B3A230F193F13210073F5F5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -118,7 +109,6 @@
 		5B8D4C53193CE77A00EA8579 /* Nabto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nabto-Prefix.pch"; sourceTree = "<group>"; };
 		5B8D4C54193CE77A00EA8579 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5B8D4C55193CE77A00EA8579 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5B8D4C67193CE77A00EA8579 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5B8D4C87193CE97600EA8579 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		5B8D4C88193CE97600EA8579 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		5B8D4C9F193D108100EA8579 /* NabtoURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NabtoURLProtocol.h; sourceTree = "<group>"; };
@@ -151,7 +141,6 @@
 		5BFF0CA81B09F0590026E180 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrontViewController.h; path = Nabto/FrontViewController.h; sourceTree = "<group>"; };
 		5BFF0CA91B09F0590026E180 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrontViewController.m; path = Nabto/FrontViewController.m; sourceTree = "<group>"; };
 		D4B9D16A1F42CA0700F43704 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		D4C159F91FAC389500CD2C34 /* NabtoClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NabtoClient.framework; path = "../../../../../artifacts/ios/ios-framework/NabtoClient.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +225,6 @@
 		5B8D4C44193CE77A00EA8579 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D4C159F91FAC389500CD2C34 /* NabtoClient.framework */,
 				D4B9D16A1F42CA0700F43704 /* libz.tbd */,
 				5BB3B72F1C0F200600D1836B /* libbz2.1.0.dylib */,
 				5BB3B72D1C0F1FC800D1836B /* libiconv.2.dylib */,
@@ -251,17 +239,9 @@
 				5B3A2311193F13290073F5F5 /* Accelerate.framework */,
 				5B3A230F193F13210073F5F5 /* OpenGLES.framework */,
 				5B3A230D193F12F80073F5F5 /* AVFoundation.framework */,
-				5B3A22FD193F11640073F5F5 /* libavcodec.a */,
-				5B3A22FE193F11640073F5F5 /* libavdevice.a */,
-				5B3A22FF193F11640073F5F5 /* libavfilter.a */,
-				5B3A2300193F11640073F5F5 /* libavformat.a */,
-				5B3A2301193F11640073F5F5 /* libavutil.a */,
-				5B3A2302193F11640073F5F5 /* libswresample.a */,
-				5B3A2303193F11640073F5F5 /* libswscale.a */,
 				5B8D4C45193CE77A00EA8579 /* Foundation.framework */,
 				5B8D4C47193CE77A00EA8579 /* CoreGraphics.framework */,
 				5B8D4C49193CE77A00EA8579 /* UIKit.framework */,
-				5B8D4C67193CE77A00EA8579 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
