@@ -13,7 +13,7 @@
 #import "kxmovie/KxMovieViewController.h"
 #import "InfoTableViewController.h"
 #import "NabtoAppCommon.h"
-#import <NabtoClient.h>
+#import "NabtoClient/NabtoClient.h"
 
 
 @interface FrontViewController ()

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <NabtoClient.h>
+#import "NabtoClient/NabtoClient.h"
 
 #define NCATEGORIES 2
 #define NTYPES 2

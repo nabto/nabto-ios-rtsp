@@ -50,6 +50,7 @@
 		5BEF2BF41AFA01F200975E75 /* NabtoVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4A182193DFAF200AC9127 /* NabtoVideo.storyboard */; };
 		5BFF0CAB1B09F0590026E180 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFF0CA91B09F0590026E180 /* FrontViewController.m */; };
 		D4B9D16B1F42CA0700F43704 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B9D16A1F42CA0700F43704 /* libz.tbd */; };
+		F74DD375773B8E54EEA09943 /* Pods_Nabto_Video.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1D047E625759D5BF84336E /* Pods_Nabto_Video.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +67,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F1D047E625759D5BF84336E /* Pods_Nabto_Video.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nabto_Video.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29E1CFC15A9D69F5570E48AE /* Pods-Nabto Video.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nabto Video.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nabto Video/Pods-Nabto Video.release.xcconfig"; sourceTree = "<group>"; };
+		4F5863F1C6BF082F5417F428 /* Pods-Nabto Video.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nabto Video.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nabto Video/Pods-Nabto Video.debug.xcconfig"; sourceTree = "<group>"; };
 		5B0FA1B01A3F32F4009FCD1D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		5B0FA1B11A3F32F4009FCD1D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5B2175671D242863002D5C27 /* VideoDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoDevice.h; path = Nabto/VideoDevice.h; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 				5BEF2BEE1AFA01F200975E75 /* SystemConfiguration.framework in Frameworks */,
 				5BEF2BEF1AFA01F200975E75 /* UIKit.framework in Frameworks */,
 				5BEF2BF01AFA01F200975E75 /* Foundation.framework in Frameworks */,
+				F74DD375773B8E54EEA09943 /* Pods_Nabto_Video.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +216,7 @@
 				5B8D4C4C193CE77A00EA8579 /* Supporting Files */,
 				5B8D4C44193CE77A00EA8579 /* Frameworks */,
 				5B8D4C43193CE77A00EA8579 /* Products */,
+				86FCB08D9040C794D8959BD7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,6 +248,7 @@
 				5B8D4C45193CE77A00EA8579 /* Foundation.framework */,
 				5B8D4C47193CE77A00EA8579 /* CoreGraphics.framework */,
 				5B8D4C49193CE77A00EA8579 /* UIKit.framework */,
+				0F1D047E625759D5BF84336E /* Pods_Nabto_Video.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -335,6 +342,15 @@
 			name = NabtoVideo;
 			sourceTree = "<group>";
 		};
+		86FCB08D9040C794D8959BD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F5863F1C6BF082F5417F428 /* Pods-Nabto Video.debug.xcconfig */,
+				29E1CFC15A9D69F5570E48AE /* Pods-Nabto Video.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -342,10 +358,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BEF2BFE1AFA01F200975E75 /* Build configuration list for PBXNativeTarget "Nabto Video" */;
 			buildPhases = (
+				8765A1E999E015BB368A31F0 /* [CP] Check Pods Manifest.lock */,
 				5BEF2BC31AFA01F200975E75 /* Sources */,
 				5BEF2BD51AFA01F200975E75 /* Frameworks */,
 				5BEF2BF11AFA01F200975E75 /* Resources */,
 				D4C159F31FAC362600CD2C34 /* Embed Frameworks */,
+				0109227B8B00EFDA6D45ED30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -402,6 +420,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0109227B8B00EFDA6D45ED30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nabto Video/Pods-Nabto Video-frameworks.sh",
+				"${PODS_ROOT}/NabtoClient/NabtoClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NabtoClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nabto Video/Pods-Nabto Video-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8765A1E999E015BB368A31F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nabto Video-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BEF2BC31AFA01F200975E75 /* Sources */ = {
@@ -535,6 +600,7 @@
 		};
 		5BEF2BFF1AFA01F200975E75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F5863F1C6BF082F5417F428 /* Pods-Nabto Video.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = NabtoVideoAppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -569,6 +635,7 @@
 		};
 		5BEF2C001AFA01F200975E75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29E1CFC15A9D69F5570E48AE /* Pods-Nabto Video.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = NabtoVideoAppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";

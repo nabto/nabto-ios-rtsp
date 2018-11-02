@@ -7,7 +7,7 @@
 //
 
 #import "WebVideoViewController.h"
-#import <NabtoClient.h>
+#import "NabtoClient/NabtoClient.h"
 
 @interface WebVideoViewController ()
 

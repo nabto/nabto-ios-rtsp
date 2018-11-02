@@ -8,7 +8,7 @@
 
 #import "VideoPageViewController.h"
 #import "NabtoAppCommon.h"
-#import <NabtoClient.h>
+#import "NabtoClient/NabtoClient.h"
 
 
 @interface VideoPageViewController ()

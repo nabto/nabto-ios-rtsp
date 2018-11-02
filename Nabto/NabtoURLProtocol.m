@@ -7,7 +7,7 @@
 //
 
 #import "NabtoURLProtocol.h"
-#import <NabtoClient.h>
+#import "NabtoClient/NabtoClient.h"
 
 @implementation NabtoURLUtils
 

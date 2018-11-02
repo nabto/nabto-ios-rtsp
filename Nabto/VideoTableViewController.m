@@ -9,7 +9,7 @@
 #import "VideoTableViewController.h"
 #import "Storage.h"
 #import "NabtoAppCommon.h"
-#import <NabtoClient.h>
+#import "NabtoClient/NabtoClient.h"
 
 
 

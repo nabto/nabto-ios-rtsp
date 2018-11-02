@@ -7,7 +7,7 @@
 //
 
 #import "DebugViewController.h"
-#import <NabtoClient.h>
+#import "NabtoClient/NabtoClient.h"
 
 @interface DebugViewController ()
 
