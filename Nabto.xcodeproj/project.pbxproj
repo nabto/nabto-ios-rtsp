@@ -43,24 +43,13 @@
 		5BEF2BE21AFA01F200975E75 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2311193F13290073F5F5 /* Accelerate.framework */; };
 		5BEF2BE31AFA01F200975E75 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A230F193F13210073F5F5 /* OpenGLES.framework */; };
 		5BEF2BE41AFA01F200975E75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A230D193F12F80073F5F5 /* AVFoundation.framework */; };
-		5BEF2BE51AFA01F200975E75 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A22FD193F11640073F5F5 /* libavcodec.a */; };
-		5BEF2BE61AFA01F200975E75 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A22FE193F11640073F5F5 /* libavdevice.a */; };
-		5BEF2BE71AFA01F200975E75 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A22FF193F11640073F5F5 /* libavfilter.a */; };
-		5BEF2BE81AFA01F200975E75 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2300193F11640073F5F5 /* libavformat.a */; };
-		5BEF2BE91AFA01F200975E75 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2301193F11640073F5F5 /* libavutil.a */; };
-		5BEF2BEA1AFA01F200975E75 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2302193F11640073F5F5 /* libswresample.a */; };
-		5BEF2BEB1AFA01F200975E75 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A2303193F11640073F5F5 /* libswscale.a */; };
 		5BEF2BEE1AFA01F200975E75 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB1E58C1AC044C600747504 /* SystemConfiguration.framework */; };
 		5BEF2BEF1AFA01F200975E75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8D4C49193CE77A00EA8579 /* UIKit.framework */; };
 		5BEF2BF01AFA01F200975E75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8D4C45193CE77A00EA8579 /* Foundation.framework */; };
 		5BEF2BF21AFA01F200975E75 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB2C0BC1A08E382009E5984 /* Common.xcassets */; };
 		5BEF2BF41AFA01F200975E75 /* NabtoVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4A182193DFAF200AC9127 /* NabtoVideo.storyboard */; };
-		5BEF2BF51AFA01F200975E75 /* kxmovie.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A22F1193F10630073F5F5 /* kxmovie.bundle */; };
-		5BEF2BF91AFA01F200975E75 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A230B193F11880073F5F5 /* include */; };
 		5BFF0CAB1B09F0590026E180 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFF0CA91B09F0590026E180 /* FrontViewController.m */; };
 		D4B9D16B1F42CA0700F43704 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B9D16A1F42CA0700F43704 /* libz.tbd */; };
-		D4C159FA1FAC389500CD2C34 /* NabtoClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C159F91FAC389500CD2C34 /* NabtoClient.framework */; };
-		D4C159FE1FAC3CED00CD2C34 /* NabtoClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C159F91FAC389500CD2C34 /* NabtoClient.framework */; };
 		D4C159FF1FAC3CED00CD2C34 /* NabtoClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4C159F91FAC389500CD2C34 /* NabtoClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -170,7 +159,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C159FA1FAC389500CD2C34 /* NabtoClient.framework in Frameworks */,
 				D4B9D16B1F42CA0700F43704 /* libz.tbd in Frameworks */,
 				5BB3B7301C0F200600D1836B /* libbz2.1.0.dylib in Frameworks */,
 				5BB3B72E1C0F1FC800D1836B /* libiconv.2.dylib in Frameworks */,
@@ -185,16 +173,8 @@
 				5BEF2BE21AFA01F200975E75 /* Accelerate.framework in Frameworks */,
 				5BEF2BE31AFA01F200975E75 /* OpenGLES.framework in Frameworks */,
 				5BEF2BE41AFA01F200975E75 /* AVFoundation.framework in Frameworks */,
-				5BEF2BE51AFA01F200975E75 /* libavcodec.a in Frameworks */,
-				5BEF2BE61AFA01F200975E75 /* libavdevice.a in Frameworks */,
-				5BEF2BE71AFA01F200975E75 /* libavfilter.a in Frameworks */,
-				5BEF2BE81AFA01F200975E75 /* libavformat.a in Frameworks */,
-				5BEF2BE91AFA01F200975E75 /* libavutil.a in Frameworks */,
-				5BEF2BEA1AFA01F200975E75 /* libswresample.a in Frameworks */,
-				5BEF2BEB1AFA01F200975E75 /* libswscale.a in Frameworks */,
 				5BEF2BEE1AFA01F200975E75 /* SystemConfiguration.framework in Frameworks */,
 				5BEF2BEF1AFA01F200975E75 /* UIKit.framework in Frameworks */,
-				D4C159FE1FAC3CED00CD2C34 /* NabtoClient.framework in Frameworks */,
 				5BEF2BF01AFA01F200975E75 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,8 +418,6 @@
 				5BEF2BF21AFA01F200975E75 /* Common.xcassets in Resources */,
 				5BEF2BF41AFA01F200975E75 /* NabtoVideo.storyboard in Resources */,
 				5B390D541AFA06DC009B85F6 /* NabtoVideo.xcassets in Resources */,
-				5BEF2BF51AFA01F200975E75 /* kxmovie.bundle in Resources */,
-				5BEF2BF91AFA01F200975E75 /* include in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
