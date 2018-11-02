@@ -1,4 +1,4 @@
-project 'NabtoCocoapodDemo/NabtoCocoapodDemo.xcodeproj/'
+project 'Nabto.xcodeproj/'
 
 # Uncomment the next line to define a global platform for your project
 platform :ios, '11.0'
