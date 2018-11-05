@@ -4,10 +4,11 @@ project 'Nabto.xcodeproj/'
 platform :ios, '11.0'
 
 def common
-  pod 'NabtoClient', '4.3.0'
+#  pod 'NabtoClient', '4.3.0'
 end
 
 target 'Nabto Video' do
-  use_frameworks!
-  common
+#  use_frameworks!
+#  common
+  pod 'ios-ffmpeg-libs'
 end
