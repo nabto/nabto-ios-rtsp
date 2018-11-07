@@ -552,7 +552,7 @@
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_NO_PIE = YES;
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../../../artifacts/nabto/ios/lib\"";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -592,7 +592,7 @@
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_NO_PIE = YES;
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../../../artifacts/nabto/ios/lib\"";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -607,6 +607,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = E55K8RCV2E;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -617,18 +618,16 @@
 					"$(inherited)",
 					"$(SRCROOT)/Libs/FFmpeg/include/**",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Nabto/NabtoVideo.plist";
+				INFOPLIST_FILE = Nabto/NabtoVideo.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Libs/**",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nabto.iosapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Nabto Video";
 				PROVISIONING_PROFILE = "9527fcb9-8fd6-432e-988e-72d906f3b4c9";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.nabto.iosapp.Nabto-Video";
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -642,6 +641,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = E55K8RCV2E;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -653,18 +653,16 @@
 					"$(inherited)",
 					"$(SRCROOT)/Libs/FFmpeg/include/**",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Nabto/NabtoVideo.plist";
+				INFOPLIST_FILE = Nabto/NabtoVideo.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Libs/**",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nabto.iosapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Nabto Video";
 				PROVISIONING_PROFILE = "9527fcb9-8fd6-432e-988e-72d906f3b4c9";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.nabto.iosapp.Nabto-Video";
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
