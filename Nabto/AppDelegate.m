@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "NabtoURLProtocol.h"
 #import "NabtoClient/NabtoClient.h"
+#import "Storage.h"
 
 @implementation AppDelegate
 
@@ -21,6 +22,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSLog(@"AD::didFinishLaunchingWithOptions");
+    if ([[[NSProcessInfo processInfo] arguments] containsObject:@"clean"]) {
+        // for UI test
+        Storage *storage = [[Storage alloc] init];
+        [storage clear];
+    }
     return YES;
 }
 							

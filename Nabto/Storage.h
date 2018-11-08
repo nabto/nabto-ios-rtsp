@@ -19,5 +19,6 @@
 - (void)removeDevice:(VideoDevice *)device;
 - (NSArray *)getSavedDevices;
 - (NSArray *)getStarredDevices;
+- (void)clear;
 
 @end

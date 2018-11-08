@@ -1,0 +1,109 @@
+# coding: utf-8
+# -*- mode: Ruby; -*-
+#
+# Customise this file, documentation can be found here:
+# https://github.com/krausefx/fastlane#customise-the-fastfile
+#
+# All lines starting with a # are ignored when running `fastlane`
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+#
+fastlane_version "2.0.0"
+
+lane :increment_build do 
+  increment_build_number
+  commit_version_bump
+end
+
+lane :increment_version_patch do 
+  increment_version_number(
+    bump_type: 'patch',
+    xcodeproj: ENV["APP_PROJECT"]
+  )
+  commit_version_bump(
+    xcodeproj: ENV["APP_PROJECT"]
+  )
+
+end
+
+lane :increment_version_minor do 
+  increment_version_number(
+    bump_type: "minor",
+    xcodeproj: ENV["APP_PROJECT"]
+  )
+  commit_version_bump(
+    xcodeproj: ENV["APP_PROJECT"]
+  )
+end
+
+lane :increment_version_major do 
+  increment_version_number(
+    bump_type: "major",
+    xcodeproj: ENV["APP_PROJECT"]
+  )
+  commit_version_bump(
+    xcodeproj: ENV["APP_PROJECT"]
+  )
+end
+
+def build_app
+  increment_build_number(
+    xcodeproj: ENV["APP_PROJECT"]
+  )
+  sigh(force: true)
+  gym(configuration: "Release")
+  commit_version_bump( 
+    xcodeproj: ENV["APP_PROJECT"],
+    message: 'Version Bump by fastlane',
+    force: true
+  )  
+  push_to_git_remote # TODO: consider jenkins inf loop...
+end
+
+lane :beta do
+  build_app
+  pilot
+  notification(message: "App #{ENV[APP_NAME]} uploaded successfully to test flight!")
+end
+
+lane :prod do
+  build_app
+  deliver(
+    submit_for_review: true,
+    force: true
+  )
+  notification(message: "🎉App #{ENV["APP_NAME"]} uploaded successfully to app store🎉!")
+end
+
+lane :create do
+  produce(
+      username: ENV['FASTLANE_USER'],
+      app_identifier: ENV['APP_IDENTIFIER'],
+      app_name: ENV['APP_NAME'],
+      language: ENV['PRODUCE_LANGUAGE'],
+      app_version: ENV['APP_VERSION'],
+  )
+  #  icons_and_deliver
+  deliver
+end
+
+lane :icons_and_deliver do
+    appicon(appicon_image_file: 'fastlane/metadata/app_icon.png',
+          appicon_devices: [:ipad, :iphone],
+          appicon_path: 'Nabto/NabtoVideo.xcassets');
+    deliver
+end
+
+lane :boevl do
+  match(type: "development")
+  match(type: "appstore")
+  sigh(force: true)
+end
+
+after_all do |lane|
+end
+
+error do |lane, exception|
+  notification(message: "Fastlane failed '#{lane}': #{exception}")
+end

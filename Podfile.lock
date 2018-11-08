@@ -1,0 +1,20 @@
+PODS:
+  - ios-ffmpeg-libs (0.0.5)
+  - NabtoClient (4.3.0)
+
+DEPENDENCIES:
+  - ios-ffmpeg-libs
+  - NabtoClient (= 4.3.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ios-ffmpeg-libs
+    - NabtoClient
+
+SPEC CHECKSUMS:
+  ios-ffmpeg-libs: fada7c0b6077ae9826249d64134cbba515c41341
+  NabtoClient: 8eda285d8b8301ea61a1e05e205192e3b5b071f8
+
+PODFILE CHECKSUM: 7a8f40b97ad34f40c6a8460cee3d56f6fbd1308e
+
+COCOAPODS: 1.5.3

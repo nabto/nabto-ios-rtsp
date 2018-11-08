@@ -15,30 +15,49 @@ Install _fastlane_ using
 or alternatively using `brew cask install fastlane`
 
 # Available Actions
-## iOS
-### ios cordova_build
+### increment_build
 ```
-fastlane ios cordova_build
-```
-
-### ios build
-```
-fastlane ios build
+fastlane increment_build
 ```
 
-### ios version
+### increment_version_patch
 ```
-fastlane ios version
-```
-
-### ios beta
-```
-fastlane ios beta
+fastlane increment_version_patch
 ```
 
-### ios release
+### increment_version_minor
 ```
-fastlane ios release
+fastlane increment_version_minor
+```
+
+### increment_version_major
+```
+fastlane increment_version_major
+```
+
+### beta
+```
+fastlane beta
+```
+
+### prod
+```
+fastlane prod
+```
+
+### create
+```
+fastlane create
+```
+
+### icons_and_deliver
+```
+fastlane icons_and_deliver
+```
+
+### boevl
+```
+fastlane boevl
 ```
 
 

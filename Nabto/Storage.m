@@ -86,4 +86,9 @@
     return devices;
 }
 
+- (void) clear {
+    NSError *error = nil;
+    [[NSFileManager defaultManager] removeItemAtPath:self.plistPath error:&error];
+}
+
 @end
