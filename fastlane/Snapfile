@@ -1,0 +1,5 @@
+scheme(ENV["GYM_SCHEME"])
+stop_after_first_error(true)
+erase_simulator(true)
+concurrent_simulators(false)
+number_of_retries(5)

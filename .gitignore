@@ -82,3 +82,6 @@ ruby
 *.mobileprovision
 Pods
 *.xcworkspace
+
+fastlane/screenshots
+.bundle

@@ -52,6 +52,7 @@
 		D48F717F21930C7900F4199D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48F717E21930C7900F4199D /* Assets.xcassets */; };
 		D4B9D16B1F42CA0700F43704 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B9D16A1F42CA0700F43704 /* libz.tbd */; };
 		D4F7DDB921941A67009E6F27 /* Nabto_RTSP_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F7DDB821941A67009E6F27 /* Nabto_RTSP_UITests.swift */; };
+		D4F7DDC221945B8D009E6F27 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F7DDC121945B8C009E6F27 /* SnapshotHelper.swift */; };
 		F74DD375773B8E54EEA09943 /* Pods_Nabto_Video.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1D047E625759D5BF84336E /* Pods_Nabto_Video.framework */; };
 /* End PBXBuildFile section */
 
@@ -161,6 +162,7 @@
 		D4F7DDB621941A67009E6F27 /* Nabto RTSP UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nabto RTSP UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F7DDB821941A67009E6F27 /* Nabto_RTSP_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nabto_RTSP_UITests.swift; sourceTree = "<group>"; };
 		D4F7DDBA21941A67009E6F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4F7DDC121945B8C009E6F27 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = "Nabto RTSP UITests/SnapshotHelper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 		5B8D4C39193CE77A00EA8579 = {
 			isa = PBXGroup;
 			children = (
+				D4F7DDC121945B8C009E6F27 /* SnapshotHelper.swift */,
 				5B8D4C4B193CE77A00EA8579 /* Nabto */,
 				5BCCEC82193E06250010CF91 /* NabtoVideo */,
 				5B8D4C7D193CE7B300EA8579 /* Util */,
@@ -572,6 +575,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4F7DDB921941A67009E6F27 /* Nabto_RTSP_UITests.swift in Sources */,
+				D4F7DDC221945B8D009E6F27 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
