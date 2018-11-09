@@ -1,5 +1,4 @@
-# coding: utf-8
-# -*- mode: Ruby; -*-
+# coding: utf-8 -*- mode: Ruby; -*-
 #
 # Customise this file, documentation can be found here:
 # https://github.com/krausefx/fastlane#customise-the-fastfile
@@ -99,6 +98,14 @@ lane :boevl do
   match(type: "development")
   match(type: "appstore")
   sigh(force: true)
+end
+
+lane :screenshots do
+  snapshot
+end
+
+lane :upload_screenshots do
+  deliver(skip_screenshots: false)
 end
 
 after_all do |lane|

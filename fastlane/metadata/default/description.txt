@@ -1,0 +1,7 @@
+See the benefits of secure, hassle-free and high performance video connectivity.
+
+With the Nabto RTSP app, you can view a live video feed from Nabto-enabled cameras. Either scan a supplied QR code, click a supplied configuration link or enter camera details in the app to connect.
+
+Read more on https://www.nabto.com
+
+Important: This is not a generic RTSP player, the app only works with a Nabto-enabled camera! 

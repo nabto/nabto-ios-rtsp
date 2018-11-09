@@ -1,3 +1,46 @@
+require 'date'
+
 force true
+skip_screenshots true
 languages(['en-US'])
+
+app_review_information(
+  first_name: "Ulrik",
+  last_name: "Gammelby",
+  phone_number: "+45 70218040",
+  email_address: "apps@nabto.com",
+  # notes in note review_information/notes.txt
+)
+
+name(
+  'en-US' => "Nabto RTSP"
+)
+
+subtitle(
+  'en-US' => "View Nabto P2P RTSP feeds"
+)
+
+support_url(
+  'en-US' => "https://www.nabto.com"
+)
+
+marketing_url(
+  'en-US' => "https://www.nabto.com"
+)
+
+privacy_url(
+  'en-US' => "https://downloads.nabto.com/assets/legal/CNT162_app_private_policy.html"
+)
+
+keywords(
+  'en-US' => "nabto, rtsp, p2p, peer-to-peer, video"
+)
+
+price_tier 0
+
+app_rating_config_path "./fastlane/ratings_config.json"
+
+copyright "#{Date.today.year} Nabto ApS"
+primary_category 'Utilities'
+secondary_category 'Photo & Video'
 

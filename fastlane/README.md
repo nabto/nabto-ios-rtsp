@@ -60,6 +60,16 @@ fastlane icons_and_deliver
 fastlane boevl
 ```
 
+### screenshots
+```
+fastlane screenshots
+```
+
+### upload_screenshots
+```
+fastlane upload_screenshots
+```
+
 
 ----
 

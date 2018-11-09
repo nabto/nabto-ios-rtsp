@@ -47,7 +47,7 @@ class Nabto_RTSP_UITests: XCTestCase {
         app.navigationBars["Video Device"].buttons["Save"].tap()
         app.tables.staticTexts[name].tap();
         
-       var exp = expectation(description: "Show a few seconds of video in default orientation")
+        var exp = expectation(description: "Show a few seconds of video in default orientation")
         XCTWaiter.wait(for: [exp], timeout: 10.0) // include connect time 
 
         snapshot("03PlayPortrait")
