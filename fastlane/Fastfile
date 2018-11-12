@@ -66,6 +66,7 @@ end
 
 lane :beta do
   sync_code_signing(type: "appstore")
+  increment_version_patch 
   build_app
   upload_to_testflight
   notification(message: "App #{ENV[APP_NAME]} uploaded successfully to test flight!")
@@ -73,6 +74,7 @@ end
 
 lane :prod do
   sync_code_signing(type: "appstore")
+  increment_version_patch 
   build_app
   upload_to_app_store(
     submit_for_review: true,
