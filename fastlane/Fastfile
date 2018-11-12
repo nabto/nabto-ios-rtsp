@@ -46,12 +46,16 @@ lane :increment_version_major do
   )
 end
 
+def build_no_deploy
+  sigh(force: true)
+  gym(configuration: "Release")
+end
+
 def build_app
   increment_build_number(
     xcodeproj: ENV["APP_PROJECT"]
   )
-  sigh(force: true)
-  gym(configuration: "Release")
+  build_no_deploy
   commit_version_bump( 
     xcodeproj: ENV["APP_PROJECT"],
     message: 'Version Bump by fastlane',
@@ -73,6 +77,10 @@ lane :prod do
     force: true
   )
   notification(message: "🎉App #{ENV["APP_NAME"]} uploaded successfully to app store🎉!")
+end
+
+lane :build do
+  build_no_deploy
 end
 
 lane :create do
@@ -100,12 +108,17 @@ lane :boevl do
   sigh(force: true)
 end
 
-lane :screenshots do
-  snapshot
+lane :new_screenshots do
+  snapshot(clear_previous_screenshots: true)
 end
 
 lane :upload_screenshots do
-  deliver(skip_screenshots: false)
+  deliver(
+    skip_screenshots: false,
+    skip_binary_upload: true,
+    submit_for_review: false,
+    skip_app_version_update: true
+  )
 end
 
 after_all do |lane|

@@ -45,6 +45,11 @@ fastlane beta
 fastlane prod
 ```
 
+### build
+```
+fastlane build
+```
+
 ### create
 ```
 fastlane create
@@ -60,9 +65,9 @@ fastlane icons_and_deliver
 fastlane boevl
 ```
 
-### screenshots
+### new_screenshots
 ```
-fastlane screenshots
+fastlane new_screenshots
 ```
 
 ### upload_screenshots
