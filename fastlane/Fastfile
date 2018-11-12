@@ -65,12 +65,14 @@ def build_app
 end
 
 lane :beta do
+  sync_code_signing(type: "appstore")
   build_app
   upload_to_testflight
   notification(message: "App #{ENV[APP_NAME]} uploaded successfully to test flight!")
 end
 
 lane :prod do
+  sync_code_signing(type: "appstore")
   build_app
   upload_to_app_store(
     submit_for_review: true,
@@ -103,8 +105,8 @@ lane :icons_and_deliver do
 end
 
 lane :boevl do
-  match(type: "development")
-  match(type: "appstore")
+  sync_code_signing(type: "development")
+  sync_code_signing(type: "appstore")
   sigh(force: true)
 end
 

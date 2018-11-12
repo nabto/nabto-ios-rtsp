@@ -8,7 +8,7 @@ def common
   pod 'ios-ffmpeg-libs'
 end
 
-target 'Nabto Video' do
+target 'Nabto RTSP' do
   use_frameworks!
   common
 end
