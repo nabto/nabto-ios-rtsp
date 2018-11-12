@@ -66,13 +66,13 @@ end
 
 lane :beta do
   build_app
-  pilot
+  upload_to_testflight
   notification(message: "App #{ENV[APP_NAME]} uploaded successfully to test flight!")
 end
 
 lane :prod do
   build_app
-  deliver(
+  upload_to_app_store(
     submit_for_review: true,
     force: true
   )
@@ -92,14 +92,14 @@ lane :create do
       app_version: ENV['APP_VERSION'],
   )
   #  icons_and_deliver
-  deliver
+  upload_to_app_store
 end
 
 lane :icons_and_deliver do
     appicon(appicon_image_file: 'fastlane/metadata/app_icon.png',
           appicon_devices: [:ipad, :iphone],
           appicon_path: 'Nabto/NabtoVideo.xcassets');
-    deliver
+    upload_to_app_store
 end
 
 lane :boevl do
@@ -113,7 +113,7 @@ lane :new_screenshots do
 end
 
 lane :upload_screenshots do
-  deliver(
+  upload_to_app_store(
     skip_screenshots: false,
     skip_binary_upload: true,
     submit_for_review: false,
