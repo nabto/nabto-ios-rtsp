@@ -69,7 +69,7 @@ lane :beta do
   increment_version_patch 
   build_app
   upload_to_testflight
-  notification(message: "App #{ENV[APP_NAME]} uploaded successfully to test flight!")
+  notification(message: "App #{ENV['APP_NAME']} uploaded successfully to test flight!")
 end
 
 lane :prod do
