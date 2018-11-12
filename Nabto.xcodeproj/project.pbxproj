@@ -53,6 +53,7 @@
 		D4B9D16B1F42CA0700F43704 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B9D16A1F42CA0700F43704 /* libz.tbd */; };
 		D4F7DDB921941A67009E6F27 /* Nabto_RTSP_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F7DDB821941A67009E6F27 /* Nabto_RTSP_UITests.swift */; };
 		D4F7DDC221945B8D009E6F27 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F7DDC121945B8C009E6F27 /* SnapshotHelper.swift */; };
+		FFAB130DBCC2975E61A0C4CE /* Pods_Nabto_RTSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F21D401F835D6266A740CF1 /* Pods_Nabto_RTSP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F21D401F835D6266A740CF1 /* Pods_Nabto_RTSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nabto_RTSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0FA1B01A3F32F4009FCD1D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		5B0FA1B11A3F32F4009FCD1D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5B2175671D242863002D5C27 /* VideoDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoDevice.h; path = Nabto/VideoDevice.h; sourceTree = "<group>"; };
@@ -153,12 +155,14 @@
 		5BFD9C3919F039340035BE5F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = Nabto/AboutViewController.m; sourceTree = "<group>"; };
 		5BFF0CA81B09F0590026E180 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrontViewController.h; path = Nabto/FrontViewController.h; sourceTree = "<group>"; };
 		5BFF0CA91B09F0590026E180 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrontViewController.m; path = Nabto/FrontViewController.m; sourceTree = "<group>"; };
+		BCA8B92FAE1F84D54314BEAE /* Pods-Nabto RTSP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nabto RTSP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nabto RTSP/Pods-Nabto RTSP.debug.xcconfig"; sourceTree = "<group>"; };
 		D48F717E21930C7900F4199D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4B9D16A1F42CA0700F43704 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D4F7DDB621941A67009E6F27 /* Nabto RTSP UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nabto RTSP UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F7DDB821941A67009E6F27 /* Nabto_RTSP_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nabto_RTSP_UITests.swift; sourceTree = "<group>"; };
 		D4F7DDBA21941A67009E6F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F7DDC121945B8C009E6F27 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = "Nabto RTSP UITests/SnapshotHelper.swift"; sourceTree = "<group>"; };
+		E50E440D423091EDDA178CAC /* Pods-Nabto RTSP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nabto RTSP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nabto RTSP/Pods-Nabto RTSP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 				5BEF2BEE1AFA01F200975E75 /* SystemConfiguration.framework in Frameworks */,
 				5BEF2BEF1AFA01F200975E75 /* UIKit.framework in Frameworks */,
 				5BEF2BF01AFA01F200975E75 /* Foundation.framework in Frameworks */,
+				FFAB130DBCC2975E61A0C4CE /* Pods_Nabto_RTSP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +243,7 @@
 				D4F7DDB721941A67009E6F27 /* Nabto RTSP UITests */,
 				5B8D4C44193CE77A00EA8579 /* Frameworks */,
 				5B8D4C43193CE77A00EA8579 /* Products */,
+				632F79B23F851C402CEC40AE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -270,6 +276,7 @@
 				5B8D4C45193CE77A00EA8579 /* Foundation.framework */,
 				5B8D4C47193CE77A00EA8579 /* CoreGraphics.framework */,
 				5B8D4C49193CE77A00EA8579 /* UIKit.framework */,
+				0F21D401F835D6266A740CF1 /* Pods_Nabto_RTSP.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -364,6 +371,15 @@
 			name = NabtoVideo;
 			sourceTree = "<group>";
 		};
+		632F79B23F851C402CEC40AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCA8B92FAE1F84D54314BEAE /* Pods-Nabto RTSP.debug.xcconfig */,
+				E50E440D423091EDDA178CAC /* Pods-Nabto RTSP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D4F7DDB721941A67009E6F27 /* Nabto RTSP UITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,10 +396,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BEF2BFE1AFA01F200975E75 /* Build configuration list for PBXNativeTarget "Nabto RTSP" */;
 			buildPhases = (
+				DB58CDF78BA1B34AD701E27E /* [CP] Check Pods Manifest.lock */,
 				5BEF2BC31AFA01F200975E75 /* Sources */,
 				5BEF2BD51AFA01F200975E75 /* Frameworks */,
 				5BEF2BF11AFA01F200975E75 /* Resources */,
 				D4C159F31FAC362600CD2C34 /* Embed Frameworks */,
+				AEE39920B19D493B9B57BFE6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -474,6 +492,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AEE39920B19D493B9B57BFE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nabto RTSP/Pods-Nabto RTSP-frameworks.sh",
+				"${PODS_ROOT}/NabtoClient/NabtoClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NabtoClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nabto RTSP/Pods-Nabto RTSP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB58CDF78BA1B34AD701E27E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nabto RTSP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BEF2BC31AFA01F200975E75 /* Sources */ = {
@@ -624,6 +689,7 @@
 		};
 		5BEF2BFF1AFA01F200975E75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA8B92FAE1F84D54314BEAE /* Pods-Nabto RTSP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -657,6 +723,7 @@
 		};
 		5BEF2C001AFA01F200975E75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E50E440D423091EDDA178CAC /* Pods-Nabto RTSP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
