@@ -47,7 +47,10 @@ lane :increment_version_major do
 end
 
 def build_no_deploy
-  sigh(force: true)
+  # app store fails intermittently as of 20181115 (https://github.com/fastlane/fastlane/issues/13666),
+  # so do not always re-create profiles (no force)
+  # sigh(force: true)
+  sigh
   gym(configuration: "Release")
 end
 
