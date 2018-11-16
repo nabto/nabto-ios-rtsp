@@ -1,3 +1,5 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
 project 'Nabto.xcodeproj/'
 
 # Uncomment the next line to define a global platform for your project
