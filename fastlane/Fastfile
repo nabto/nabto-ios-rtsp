@@ -10,125 +10,129 @@
 #
 fastlane_version "2.0.0"
 
-lane :increment_build do
-  increment_build_number
-  commit_version_bump
-end
+platform :ios do
 
-lane :increment_version_patch do
-  increment_version_number(
-    bump_type: 'patch',
-    xcodeproj: ENV["APP_PROJECT"]
-  )
-  commit_version_bump(
-    xcodeproj: ENV["APP_PROJECT"]
-  )
+  lane :increment_build do
+    increment_build_number
+    commit_version_bump
+  end
 
-end
+  lane :increment_version_patch do
+    increment_version_number(
+      bump_type: 'patch',
+      xcodeproj: ENV["APP_PROJECT"]
+    )
+    commit_version_bump(
+      xcodeproj: ENV["APP_PROJECT"]
+    )
 
-lane :increment_version_minor do
-  increment_version_number(
-    bump_type: "minor",
-    xcodeproj: ENV["APP_PROJECT"]
-  )
-  commit_version_bump(
-    xcodeproj: ENV["APP_PROJECT"]
-  )
-end
+  end
 
-lane :increment_version_major do
-  increment_version_number(
-    bump_type: "major",
-    xcodeproj: ENV["APP_PROJECT"]
-  )
-  commit_version_bump(
-    xcodeproj: ENV["APP_PROJECT"]
-  )
-end
+  lane :increment_version_minor do
+    increment_version_number(
+      bump_type: "minor",
+      xcodeproj: ENV["APP_PROJECT"]
+    )
+    commit_version_bump(
+      xcodeproj: ENV["APP_PROJECT"]
+    )
+  end
 
-def build_no_deploy
-  # app store fails intermittently as of 20181115 (https://github.com/fastlane/fastlane/issues/13666) so disabling provisioning profile sync
-  # sigh(force: true)
-  gym(configuration: "Release")
-end
+  lane :increment_version_major do
+    increment_version_number(
+      bump_type: "major",
+      xcodeproj: ENV["APP_PROJECT"]
+    )
+    commit_version_bump(
+      xcodeproj: ENV["APP_PROJECT"]
+    )
+  end
 
-def build_app
-  increment_build_number(
-    xcodeproj: ENV["APP_PROJECT"]
-  )
-  build_no_deploy
-  commit_version_bump(
-    xcodeproj: ENV["APP_PROJECT"],
-    message: 'Version Bump by fastlane',
-    force: true
-  )
-  push_to_git_remote # TODO: consider jenkins inf loop...
-end
+  def build_no_deploy
+    # app store fails intermittently as of 20181115 (https://github.com/fastlane/fastlane/issues/13666) so disabling provisioning profile sync
+    # sigh(force: true)
+    gym(configuration: "Release")
+  end
 
-lane :beta do
-  sync_code_signing(type: "appstore")
-  increment_version_patch
-  build_app
-  upload_to_testflight
-  notification(message: "App #{ENV['APP_NAME']} uploaded successfully to test flight!")
-end
+  def build_app
+    increment_build_number(
+      xcodeproj: ENV["APP_PROJECT"]
+    )
+    build_no_deploy
+    commit_version_bump(
+      xcodeproj: ENV["APP_PROJECT"],
+      message: 'Version Bump by fastlane',
+      force: true
+    )
+    push_to_git_remote # TODO: consider jenkins inf loop...
+  end
 
-lane :prod do
-  sync_code_signing(type: "appstore")
-  increment_version_patch
-  build_app
-  upload_to_app_store(
-    submit_for_review: true,
-    force: true
-  )
-  notification(message: "🎉App #{ENV["APP_NAME"]} uploaded successfully to app store🎉!")
-end
+  lane :beta do
+    sync_code_signing(type: "appstore")
+    increment_version_patch
+    build_app
+    upload_to_testflight
+    notification(message: "App #{ENV['APP_NAME']} uploaded successfully to test flight!")
+  end
 
-lane :build_release do
-  build_no_deploy
-end
+  lane :prod do
+    sync_code_signing(type: "appstore")
+    increment_version_patch
+    build_app
+    upload_to_app_store(
+      submit_for_review: true,
+      force: true
+    )
+    notification(message: "🎉App #{ENV["APP_NAME"]} uploaded successfully to app store🎉!")
+  end
 
-lane :create do
-  produce(
+  lane :build_release do
+    build_no_deploy
+  end
+
+  lane :create do
+    produce(
       username: ENV['FASTLANE_USER'],
       app_identifier: ENV['APP_IDENTIFIER'],
       app_name: ENV['APP_NAME'],
       language: ENV['PRODUCE_LANGUAGE'],
       app_version: ENV['APP_VERSION'],
-  )
-  #  icons_and_deliver
-  upload_to_app_store
-end
-
-lane :icons_and_deliver do
-    appicon(appicon_image_file: 'fastlane/metadata/app_icon.png',
-          appicon_devices: [:ipad, :iphone],
-          appicon_path: 'Nabto/NabtoVideo.xcassets');
+    )
+    #  icons_and_deliver
     upload_to_app_store
-end
+  end
 
-lane :boevl do
-  sync_code_signing(type: "development")
-  sync_code_signing(type: "appstore")
-  sigh(force: true)
-end
+  lane :icons_and_deliver do
+    appicon(appicon_image_file: 'fastlane/metadata/app_icon.png',
+            appicon_devices: [:ipad, :iphone],
+            appicon_path: 'Nabto/NabtoVideo.xcassets');
+    upload_to_app_store
+  end
 
-lane :new_screenshots do
-  snapshot(clear_previous_screenshots: true)
-end
+  lane :boevl do
+    sync_code_signing(type: "development")
+    sync_code_signing(type: "appstore")
+    sigh(force: true)
+  end
 
-lane :upload_screenshots do
-  upload_to_app_store(
-    skip_screenshots: false,
-    skip_binary_upload: true,
-    submit_for_review: false,
-    skip_app_version_update: true
-  )
-end
+  lane :new_screenshots do
+    snapshot(clear_previous_screenshots: true)
+  end
 
-after_all do |lane|
-end
+  lane :upload_screenshots do
+    upload_to_app_store(
+      skip_screenshots: false,
+      skip_binary_upload: true,
+      submit_for_review: false,
+      skip_app_version_update: true
+    )
+  end
 
-error do |lane, exception|
-  notification(message: "Fastlane failed '#{lane}': #{exception}")
+  after_all do |lane|
+  end
+
+  error do |lane, exception|
+    notification(message: "Fastlane failed '#{lane}': #{exception}")
+  end
+
 end
