@@ -10,12 +10,12 @@
 #
 fastlane_version "2.0.0"
 
-lane :increment_build do 
+lane :increment_build do
   increment_build_number
   commit_version_bump
 end
 
-lane :increment_version_patch do 
+lane :increment_version_patch do
   increment_version_number(
     bump_type: 'patch',
     xcodeproj: ENV["APP_PROJECT"]
@@ -26,7 +26,7 @@ lane :increment_version_patch do
 
 end
 
-lane :increment_version_minor do 
+lane :increment_version_minor do
   increment_version_number(
     bump_type: "minor",
     xcodeproj: ENV["APP_PROJECT"]
@@ -36,7 +36,7 @@ lane :increment_version_minor do
   )
 end
 
-lane :increment_version_major do 
+lane :increment_version_major do
   increment_version_number(
     bump_type: "major",
     xcodeproj: ENV["APP_PROJECT"]
@@ -57,17 +57,17 @@ def build_app
     xcodeproj: ENV["APP_PROJECT"]
   )
   build_no_deploy
-  commit_version_bump( 
+  commit_version_bump(
     xcodeproj: ENV["APP_PROJECT"],
     message: 'Version Bump by fastlane',
     force: true
-  )  
+  )
   push_to_git_remote # TODO: consider jenkins inf loop...
 end
 
 lane :beta do
   sync_code_signing(type: "appstore")
-  increment_version_patch 
+  increment_version_patch
   build_app
   upload_to_testflight
   notification(message: "App #{ENV['APP_NAME']} uploaded successfully to test flight!")
@@ -75,7 +75,7 @@ end
 
 lane :prod do
   sync_code_signing(type: "appstore")
-  increment_version_patch 
+  increment_version_patch
   build_app
   upload_to_app_store(
     submit_for_review: true,
@@ -84,7 +84,7 @@ lane :prod do
   notification(message: "🎉App #{ENV["APP_NAME"]} uploaded successfully to app store🎉!")
 end
 
-lane :build do
+lane :build_release do
   build_no_deploy
 end
 
