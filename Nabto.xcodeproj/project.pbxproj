@@ -499,21 +499,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Nabto RTSP/Pods-Nabto RTSP-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Nabto RTSP/Pods-Nabto RTSP-frameworks.sh",
 				"${PODS_ROOT}/NabtoClient/NabtoClient.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NabtoClient.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nabto RTSP/Pods-Nabto RTSP-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nabto RTSP/Pods-Nabto RTSP-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB58CDF78BA1B34AD701E27E /* [CP] Check Pods Manifest.lock */ = {
