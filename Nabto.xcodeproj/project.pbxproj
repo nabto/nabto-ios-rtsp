@@ -457,6 +457,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -689,10 +690,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nabto Fastlane (Z3M7969GFS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nabto Fastlane (Z3M7969GFS)";
+				CODE_SIGN_IDENTITY = "Apple Development: Nabto Fastlane (Z3M7969GFS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: Nabto Fastlane (Z3M7969GFS)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 40;
+				CURRENT_PROJECT_VERSION = 41;
 				DEVELOPMENT_TEAM = E55K8RCV2E;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -710,7 +711,6 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nabto.iosapp.Nabto-RTSP";
 				PRODUCT_NAME = "Nabto RTSP";
-				PROVISIONING_PROFILE = "9527fcb9-8fd6-432e-988e-72d906f3b4c9";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.nabto.iosapp.Nabto-RTSP";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
@@ -723,10 +723,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Nabto ApS (E55K8RCV2E)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nabto ApS (E55K8RCV2E)";
+				CODE_SIGN_IDENTITY = "Apple Distribution: Nabto ApS (E55K8RCV2E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution: Nabto ApS (E55K8RCV2E)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 40;
+				CURRENT_PROJECT_VERSION = 41;
 				DEVELOPMENT_TEAM = E55K8RCV2E;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -745,7 +745,6 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nabto.iosapp.Nabto-RTSP";
 				PRODUCT_NAME = "Nabto RTSP";
-				PROVISIONING_PROFILE = "9527fcb9-8fd6-432e-988e-72d906f3b4c9";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.nabto.iosapp.Nabto-RTSP";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
