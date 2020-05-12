@@ -117,7 +117,7 @@
 - (void)loadResourceThreadedMethod {
     NSLog(@"Loading %@", [self.request URL]);
     
-    nabto_status_t status;
+    NabtoClientStatus status;
     char* resultBuffer = 0;
     size_t resultLen = 0;
     char* resultMimeType = 0;
@@ -138,7 +138,7 @@
         status = [[NabtoClient instance] nabtoFetchUrl:urlString withResultBuffer:&resultBuffer resultLength:&resultLen mimeType:&resultMimeType];
     }
 
-    if (status == NABTO_OK) {
+    if (status == NCS_OK) {
         NSData *data = nil;
         NSString *textEncodingName = NULL;
         NSString *mimeType = NULL;

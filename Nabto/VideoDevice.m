@@ -123,14 +123,14 @@
     [self.dictionary setValue:uid forKey:VD_UID];
 }
 
-- (nabto_tunnel_t)tunnel {
+- (NabtoTunnelHandle)tunnel {
     if (!_tunnel) {
         return nil;
     }
     return _tunnel;
 }
 
-- (void)setTunnel:(nabto_tunnel_t)tunnel {
+- (void)setTunnel:(NabtoTunnelHandle)tunnel {
     _tunnel = tunnel;
 }
 

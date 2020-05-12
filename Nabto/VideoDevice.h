@@ -46,7 +46,7 @@ typedef enum {
 @property (nonatomic)int star;
 @property (nonatomic, strong)NSString *user;
 @property (nonatomic, strong)NSString *pass;
-@property (nonatomic)nabto_tunnel_t tunnel;
+@property (nonatomic)NabtoTunnelHandle tunnel;
 @property (nonatomic, strong)NSNumber *uid;
 
 @property (nonatomic, strong)NSMutableDictionary *dictionary;
