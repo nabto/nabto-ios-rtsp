@@ -175,6 +175,7 @@
         self.titleField.text = device.title;
     }
     self.nameField.text = device.name;
+    self.hostField.text = device.host;
     self.portField.text = [NSString stringWithFormat:@"%d", device.port];
     self.urlField.text = device.url;
     [self selectRow:device.type - 1];
