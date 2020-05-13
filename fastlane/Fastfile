@@ -23,7 +23,8 @@ platform :ios do
       xcodeproj: ENV["APP_PROJECT"]
     )
     commit_version_bump(
-      xcodeproj: ENV["APP_PROJECT"]
+      xcodeproj: ENV["APP_PROJECT"],
+      force: true
     )
 
   end
@@ -34,7 +35,8 @@ platform :ios do
       xcodeproj: ENV["APP_PROJECT"]
     )
     commit_version_bump(
-      xcodeproj: ENV["APP_PROJECT"]
+      xcodeproj: ENV["APP_PROJECT"],
+      force: true
     )
   end
 
@@ -44,7 +46,8 @@ platform :ios do
       xcodeproj: ENV["APP_PROJECT"]
     )
     commit_version_bump(
-      xcodeproj: ENV["APP_PROJECT"]
+      xcodeproj: ENV["APP_PROJECT"],
+      force: true
     )
   end
 

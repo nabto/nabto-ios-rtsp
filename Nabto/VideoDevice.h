@@ -25,6 +25,7 @@ typedef enum {
 
 #define VD_TITLE     @"title"
 #define VD_NAME      @"name"
+#define VD_HOST      @"host"
 #define VD_TYPE      @"type"
 #define VD_PORT      @"port"
 #define VD_URL       @"url"
@@ -39,6 +40,7 @@ typedef enum {
 
 @property (nonatomic, strong)NSString *title;
 @property (nonatomic, strong)NSString *name;
+@property (nonatomic, strong)NSString *host;
 @property (nonatomic, strong)NSString *url;
 @property (nonatomic)VideoType type;
 @property (nonatomic)int port;
@@ -56,6 +58,7 @@ typedef enum {
 - (id)initWithDictionary:(NSDictionary *)dict;
 - (id)initWithTitle:(NSString *)theTitle
                name:(NSString *)theName
+               host:(NSString *)theHost
                type:(VideoType)theType
                port:(int)thePort
                 url:(NSString *)theUrl

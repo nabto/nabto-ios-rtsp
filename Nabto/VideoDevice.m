@@ -12,7 +12,7 @@
 
 @implementation VideoDevice
 
-@synthesize title = _title, name = _name, url =_url, type = _type, port = _port, category = _category, star = _star, user = _user, pass = _pass, tunnel = _tunnel;
+@synthesize title = _title, name = _name, host = _host, url =_url, type = _type, port = _port, category = _category, star = _star, user = _user, pass = _pass, tunnel = _tunnel;
 @synthesize dictionary = _dictionary;
 
 - (NSMutableDictionary *)dictionary {
@@ -39,6 +39,14 @@
 
 - (void)setName:(NSString *)name {
     [self.dictionary setValue:name forKey:VD_NAME];
+}
+
+- (NSString *)host {
+    return [self.dictionary objectForKey:VD_HOST];
+}
+
+- (void)setHost:(NSString *)host {
+    [self.dictionary setValue:host forKey:VD_HOST];
 }
 
 - (VideoType)type {
@@ -136,16 +144,17 @@
 
 - (id)init {
     // init with default values
-    return [self initWithTitle:nil name:nil type:-1 port:-1 url:nil category:-1 starred:0 user:nil uid:0];
+    return [self initWithTitle:nil name:nil host:nil type:-1 port:-1 url:nil category:-1 starred:0 user:nil uid:0];
 }
 
 - (id)initWithName:(NSString *)name {
-    return [self initWithTitle:nil name:name type:-1 port:-1 url:nil category:-1 starred:0 user:nil uid:0];
+    return [self initWithTitle:nil name:name host:nil type:-1 port:-1 url:nil category:-1 starred:0 user:nil uid:0];
 }
 
 - (id)initWithDictionary:(NSDictionary *)dict {
     return [self initWithTitle:[dict objectForKey:VD_TITLE]
                           name:[dict objectForKey:VD_NAME]
+                          host:[dict objectForKey:VD_HOST]
                           type:[[dict objectForKey:VD_TYPE] intValue]
                           port:[[dict objectForKey:VD_PORT] intValue]
                            url:[dict objectForKey:VD_URL]
@@ -157,6 +166,7 @@
 
 - (id)initWithTitle:(NSString *)theTitle
                name:(NSString *)theName
+               host:(NSString *)theHost
                type:(VideoType)theType
                port:(int)thePort
                 url:(NSString *)theUrl
@@ -174,7 +184,10 @@
     
     if (!theName || [theName rangeOfString:@"."].location == NSNotFound) { return nil; }
     self.name = theName;
-    
+
+    if (!theHost) { return nil; }
+    self.host = theHost;
+
     if (!theType || theType < 1 || theType > NTYPES) { theType = MPEG; }
     self.type = theType;
     
