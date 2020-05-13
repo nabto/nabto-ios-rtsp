@@ -94,7 +94,9 @@
 }
 
 - (void)stop {
-    self.hidden = YES;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.hidden = YES;
+    });
 }
 
 - (void)text:(NSString *)string {

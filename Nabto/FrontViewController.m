@@ -80,9 +80,9 @@
     [self.videoButton setTitle:@"Open Web View" forState:UIControlStateNormal];
 }
 
-- (void)handleTunnelError:(nabto_tunnel_state_t)state {
+- (void)handleTunnelError:(NabtoTunnelState)state {
     NSString *stateString = [NabtoClient nabtoTunnelInfoString:state];
-    nabto_status_t status = [[NabtoClient instance] nabtoTunnelError:self.activeDevice.tunnel];
+    int status = [[NabtoClient instance] nabtoTunnelError:self.activeDevice.tunnel];
     
     // If no apparent error, try again
     if (status == 0) {
@@ -103,21 +103,21 @@
     [tunnelTimer invalidate];
     
     // Try to reconnect if port is in use
-    if (status == (nabto_status_t)2000045) {
+    if (status == 2000045) {
         [self openVideo:self.activeDevice];
     }
 }
 
 - (void)statusTimer {
-    nabto_tunnel_state_t state = [[NabtoClient instance] nabtoTunnelInfo:self.activeDevice.tunnel];
+    NabtoTunnelState state = [[NabtoClient instance] nabtoTunnelInfo:self.activeDevice.tunnel];
     
     NSLog(@"statusTimer");
     
-    if (state > NTCS_UNKNOWN) {
+    if (state > NTS_UNKNOWN) {
         [self.activityView persistentSuccess:[NabtoClient nabtoTunnelInfoString:state]];
         [self startVideo:self.activeDevice];
     }
-    else if (state == NTCS_CLOSED) {
+    else if (state == NTS_CLOSED) {
         [self handleTunnelError:state];
     }
     else {
@@ -145,11 +145,11 @@
 
 - (void)openVideo:(VideoDevice *)device {
     if (self.activeDevice.tunnel) {
-        nabto_tunnel_state_t state = [[NabtoClient instance] nabtoTunnelInfo:self.activeDevice.tunnel];
-        if (state == NTCS_CONNECTING) {
+        NabtoTunnelState state = [[NabtoClient instance] nabtoTunnelInfo:self.activeDevice.tunnel];
+        if (state == NTS_CONNECTING) {
             return;
         }
-        else if (state > NTCS_UNKNOWN) {
+        else if (state > NTS_UNKNOWN) {
             [self.activityView persistentSuccess:[NabtoClient nabtoTunnelInfoString:state]];
             [self startVideo:self.activeDevice];
             return;
@@ -164,16 +164,16 @@
         return;
     }
     
-    nabto_tunnel_t tunnel;
-    nabto_status_t status = [[NabtoClient instance] nabtoTunnelOpenTcp:&tunnel toHost:device.name onPort:device.port];
+    NabtoTunnelHandle tunnel;
+    NabtoClientStatus status = [[NabtoClient instance] nabtoTunnelOpenTcp:&tunnel toHost:device.name onPort:device.port];
     self.activeDevice.tunnel = tunnel;
     
-    if (status != NABTO_OK) {
+    if (status != NCS_OK) {
         [self updateStatus:[NabtoClient nabtoStatusString:status]];
     }
     else {
         tunnelTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(statusTimer) userInfo:nil repeats:YES];
-        [self updateStatus:[NabtoClient nabtoTunnelInfoString:NTCS_CONNECTING]];
+        [self updateStatus:[NabtoClient nabtoTunnelInfoString:NTS_CONNECTING]];
     }
 }
 
@@ -213,7 +213,7 @@
     [info setObject:self.activeDevice.url forKey:@"URL"];
     [info setObject:[[NabtoClient instance] nabtoVersion] forKey:@"Nabto Version"];
     
-    nabto_tunnel_state_t state = [[NabtoClient instance] nabtoTunnelInfo:self.activeDevice.tunnel];
+    NabtoTunnelState state = [[NabtoClient instance] nabtoTunnelInfo:self.activeDevice.tunnel];
     [info setObject:[NabtoClient nabtoTunnelInfoString:state] forKey:@"Connection"];
     
     return [info copy];
@@ -272,15 +272,17 @@
 }
 
 - (void)authenticationError:(NSNotification *)notification {
-    if ([self isViewLoaded] && self.view.window) {
-        [self closeVideo];
-        
-        dispatch_after(0, dispatch_get_main_queue(), ^{
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login" message:@"Authentication needed" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Login", nil];
-            alert.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
-            [alert show];
-        });
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if ([self isViewLoaded] && self.view.window) {
+            [self closeVideo];
+            
+            dispatch_after(0, dispatch_get_main_queue(), ^{
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login" message:@"Authentication needed" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Login", nil];
+                alert.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
+                [alert show];
+            });
+        }
+    });
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
