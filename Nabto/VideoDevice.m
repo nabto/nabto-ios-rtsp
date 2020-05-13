@@ -185,8 +185,11 @@
     if (!theName || [theName rangeOfString:@"."].location == NSNotFound) { return nil; }
     self.name = theName;
 
-    if (!theHost) { return nil; }
-    self.host = theHost;
+    if (theHost) {
+        self.host = theHost;
+    } else {
+        self.host = @"127.0.0.1";
+    }
 
     if (!theType || theType < 1 || theType > NTYPES) { theType = MPEG; }
     self.type = theType;

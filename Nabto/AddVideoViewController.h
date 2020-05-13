@@ -26,6 +26,7 @@
 @property (nonatomic, strong)IBOutlet UILabel *typeLabel;
 @property (nonatomic, strong)IBOutlet UITextField *titleField;
 @property (nonatomic, strong)IBOutlet UITextField *nameField;
+@property (nonatomic, strong)IBOutlet UITextField *hostField;
 @property (nonatomic, strong)IBOutlet UITextField *portField;
 @property (nonatomic, strong)IBOutlet UITextField *urlField;
 

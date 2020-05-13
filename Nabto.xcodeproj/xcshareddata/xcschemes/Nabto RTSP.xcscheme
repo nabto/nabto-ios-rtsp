@@ -26,9 +26,18 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
       enableThreadSanitizer = "YES"
-      enableUBSanitizer = "YES"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      enableUBSanitizer = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5BEF2BC21AFA01F200975E75"
+            BuildableName = "Nabto RTSP.app"
+            BlueprintName = "Nabto RTSP"
+            ReferencedContainer = "container:Nabto.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -41,17 +50,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5BEF2BC21AFA01F200975E75"
-            BuildableName = "Nabto RTSP.app"
-            BlueprintName = "Nabto RTSP"
-            ReferencedContainer = "container:Nabto.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -73,8 +71,6 @@
             ReferencedContainer = "container:Nabto.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

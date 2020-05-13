@@ -80,7 +80,14 @@
     NSMutableArray *devices = [[NSMutableArray alloc] init];
     for (NSDictionary *device in savedDevices) {
         if ([[device objectForKey:VD_STAR] intValue] == 1) {
-            [devices addObject:[[VideoDevice alloc] initWithDictionary:device]];
+            // migrate to new format with host field
+            if ([device objectForKey:VD_HOST] != nil) {
+                [devices addObject:[[VideoDevice alloc] initWithDictionary:device]];
+            } else {
+                NSDictionary* copy = [device mutableCopy];
+                [copy setValue:@"127.0.0.1" forKey:VD_HOST];
+                [devices addObject:[[VideoDevice alloc] initWithDictionary:copy]];
+            }
         }
     }
     return devices;

@@ -17,7 +17,7 @@
 
 @implementation AddVideoViewController
 
-@synthesize titleField, nameField, typeLabel, portField, urlField, typePicker, activeDevice, typeArray = _typeArray, goToQR;
+@synthesize titleField, nameField, hostField, typeLabel, portField, urlField, typePicker, activeDevice, typeArray = _typeArray, goToQR;
 
 @synthesize addDelegate;
 
@@ -37,6 +37,7 @@
 - (void)save {
     VideoDevice *device = [[VideoDevice alloc] initWithTitle:self.titleField.text
                                                         name:self.nameField.text
+                                                        host:self.hostField.text
                                                         type:[VideoDevice stringToType:self.typeLabel.text]
                                                         port:[self.portField.text intValue]
                                                          url:self.urlField.text
