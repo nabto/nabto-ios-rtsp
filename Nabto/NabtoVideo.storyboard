@@ -347,6 +347,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="hostField" destination="4d1-Lp-SQg" id="ac6-TL-ysN"/>
                         <outlet property="nameField" destination="JaT-Vv-wal" id="Ku3-EK-UAo"/>
                         <outlet property="portField" destination="5Rt-MO-LQN" id="bSV-A1-MLX"/>
                         <outlet property="titleField" destination="OlH-cR-qQc" id="YBW-8K-aio"/>
