@@ -693,7 +693,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development: Nabto Fastlane (Z3M7969GFS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: Nabto Fastlane (Z3M7969GFS)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 42;
+				CURRENT_PROJECT_VERSION = 43;
 				DEVELOPMENT_TEAM = E55K8RCV2E;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -726,7 +726,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution: Nabto ApS (E55K8RCV2E)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution: Nabto ApS (E55K8RCV2E)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 42;
+				CURRENT_PROJECT_VERSION = 43;
 				DEVELOPMENT_TEAM = E55K8RCV2E;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
