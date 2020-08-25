@@ -165,7 +165,7 @@
     }
     
     NabtoTunnelHandle tunnel;
-    NabtoClientStatus status = [[NabtoClient instance] nabtoTunnelOpenTcp:&tunnel toHost:device.name onPort:device.port];
+    NabtoClientStatus status = [[NabtoClient instance] nabtoTunnelOpenTcp:&tunnel toHost:device.name remoteHost:device.host onPort:device.port];
     self.activeDevice.tunnel = tunnel;
     
     if (status != NCS_OK) {

@@ -51,7 +51,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>This app needs camera access to scan QR codes representing unique connection ids for gateways to be accessed - only QR decoded strings are stored</string>
 	<key>UIApplicationExitsOnSuspend</key>
-	<true/>
+	<false/>
 	<key>UILaunchStoryboardName</key>
 	<string>NabtoVideoLaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
