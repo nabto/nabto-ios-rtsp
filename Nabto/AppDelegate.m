@@ -51,7 +51,12 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     NSLog(@"AD::applicationDidBecomeActive");
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    // overly simplified handling (possible as there is no access control in the demo)
+    [[NabtoClient instance] nabtoStartup];
+    [[NabtoClient instance] nabtoInstallDefaultStaticResources:NULL];
+    [[NabtoClient instance] nabtoOpenSession:@"guest" withPassword:@"123456"];
+    UINavigationController *navigationController = (UINavigationController  *)self.window.rootViewController;
+    [navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

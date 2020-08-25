@@ -212,11 +212,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Startup Nabto with guest session. If it fails user will get an error on connect
-    [[NabtoClient instance] nabtoStartup];
-    [[NabtoClient instance] nabtoInstallDefaultStaticResources:NULL];
-    [[NabtoClient instance] nabtoOpenSession:@"guest" withPassword:@"123456"];
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationHandleOpenURL:) name:@"ApplicationHandleOpenURL" object:nil];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationHandleAddDevice:) name:@"ApplicationHandleAddDevice" object:nil];
