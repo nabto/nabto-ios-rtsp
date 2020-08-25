@@ -13,6 +13,23 @@
 
 @implementation AppDelegate
 
+BOOL initialized = NO;
+
+- (void)initializeNabto {
+    if (!initialized) {
+        // overly simplified handling (possible as there is no access control in the demo)
+        [[NabtoClient instance] nabtoStartup];
+        [[NabtoClient instance] nabtoInstallDefaultStaticResources:NULL];
+        [[NabtoClient instance] nabtoOpenSession:@"guest" withPassword:@"123456"];
+        initialized = YES;
+    }
+}
+
+- (void)deInitializeNabto {
+    [[NabtoClient instance] nabtoShutdown];
+    initialized = NO;
+}
+
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSLog(@"AD::willFinishLaunchingWithOptions");
@@ -27,6 +44,7 @@
         Storage *storage = [[Storage alloc] init];
         [storage clear];
     }
+    [self initializeNabto];
     return YES;
 }
 							
@@ -38,7 +56,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     NSLog(@"AD::applicationDidEnterBackground");
-    [[NabtoClient instance] nabtoShutdown];
+    [self deInitializeNabto];
 
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
@@ -46,15 +64,12 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     NSLog(@"AD::applicationWillEnterForeground");
+    [self initializeNabto];
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     NSLog(@"AD::applicationDidBecomeActive");
-    // overly simplified handling (possible as there is no access control in the demo)
-    [[NabtoClient instance] nabtoStartup];
-    [[NabtoClient instance] nabtoInstallDefaultStaticResources:NULL];
-    [[NabtoClient instance] nabtoOpenSession:@"guest" withPassword:@"123456"];
     UINavigationController *navigationController = (UINavigationController  *)self.window.rootViewController;
     [navigationController popToRootViewControllerAnimated:YES];
 }
