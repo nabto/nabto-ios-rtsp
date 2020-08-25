@@ -6,7 +6,7 @@ project 'Nabto.xcodeproj/'
 platform :ios, '11.0'
 
 def common
-  pod 'NabtoClient', '5.1.2'
+  pod 'NabtoClient', '5.1.3'
   pod 'ios-ffmpeg-libs'
 end
 
