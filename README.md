@@ -1,5 +1,9 @@
 # Nabto P2P RTSP demo app for iOS
 
+> [!WARNING]
+> **This repository is deprecated and archived.** It is no longer maintained and will not receive updates or fixes.
+> It targets the legacy Nabto 4/Micro platform. For new development, use Nabto 5/Edge — see [docs.nabto.com](https://docs.nabto.com).
+
 Simple iOS app demonstrating Nabto 4/Micro P2P tunnelling of a remote RTSP/TCP feed and video playback using FFMPG and Nabto.
 
 Note that this app demonstrates the legacy Nabto 4/Micro platform - new demo apps for Nabto 5/Edge will be provided in 2022. [Read more about Nabto 4 vs 5](https://docs.nabto.com/developer/guides/concepts/overview/edge-vs-micro.html). Most importanty, Nabto 4/Micro and Nabto 5/Edge are **100% incompatible**, so you cannot use this app for Nabto 5/Edge.
